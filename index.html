@@ -12,7 +12,7 @@
 		<!-- Bootstrap core CSS -->
 		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
         <link href="css/bootstrap.minv2.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="thtps://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<!-- Custom styles for this template -->
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -54,19 +54,189 @@
 				</div>
             </div>
         </nav>
+
+
+
+
+
+
+
+        
         <div class="blockLine"></div>
         <section id="portfolio">
+
+            <style>
+                .banner-imgBox{
+                    width: 1530px;
+                    height: 470px;
+                    /*background-color: #009dda;*/
+                    margin: 0 auto;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .banner-imgBox2{
+                    width: 1530px;
+                    height: 470px;
+                    display: flex;
+                    /*background-color: chartreuse;*/
+                    margin: 0 auto;
+                    transition: all 0.5s;
+                }
+                .banner-imgBox2>img{
+                    width: 1530px;
+                    height: 470px;
+                }
+                .on{
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 100%;
+                    background-color: gainsboro;
+                    margin-left: 20px;
+                }
+                .banner-imgBox-div{
+                    width: 400px;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 40%;
+                    display: flex;
+                }
+                .on2{
+                    background-color: red;
+                }
+                .banner-imgBox-left{
+                    position: absolute;
+                    left: 20px;
+                    top:48%;
+                    width: 48px;
+                    height: 48px;
+                }
+                .banner-imgBox-right{
+                    position: absolute;
+                    right: 20px;
+                    top:48%;
+                    width: 48px;
+                    height: 48px;
+                    margin-right: 0;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="banner-imgBox">
+                <div class="banner-imgBox2">
+                    <img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZ0c4UENRVVEyZlBZaV9wP2U9SnVneGlJ.jpg" alt="">
+                    <img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZzQ3ZFYzczlwc3RzdTRCP2U9MHRjZnNo.jpg" alt="">
+                    <img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqaEJGVHpkNWRHT3Z2c2llP2U9Yk5CZ2pV.jpg" alt="">
+                    <img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqaElTM3JDV0pNMDA4ZklSP2U9V2J2Yk82.jpg" alt="">
+                    <img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZ3Y5eklEM2ViTkJpMVF1P2U9ODBUY0NI.jpg" alt="">
+                </div>
+                <div class="banner-imgBox-div">
+                    <div class="on"></div>
+                    <div class="on"></div>
+                    <div class="on"></div>
+                    <div class="on"></div>
+                    <div class="on"></div>
+                </div>
+                <img class="banner-imgBox-left" src="images/left.png" onclick="marginLeft(false)">
+                <img class="banner-imgBox-right" src="images/right.png" onclick="marginLeft(true)">
+            </div>
+        
+        </body>
+        <script>
+            var time=2000;
+            let content = document.querySelector('.banner-imgBox2');
+            let switchBtn = document.querySelector('.banner-imgBox-div');
+            switchBtn.children[0].classList.add('on2');
+            let index=0;
+            let x=0;
+            function marginLeft(right) {
+                if(right){
+                    switchBtn.children[index].classList.remove('on2');
+                    if(index==switchBtn.children.length-1){
+                        index=0;
+                        content.innerHTML+=content.innerHTML;
+                        x++;
+                    }else {
+                        index++;
+                        x++;
+                    }
+                    switchBtn.children[index].classList.add('on2');
+                    content.style.marginLeft=x*-1530+"px"
+                }else{
+                    switchBtn.children[index].classList.remove('on2');
+                    if(index==0){
+                        index=switchBtn.children.length-1;
+                        if(x==0){
+                            x=0
+                        }else{
+                            x--;
+                        }
+                    }else {
+                        index--;
+                        x--;
+                    }
+                    switchBtn.children[index].classList.add('on2');
+                    content.style.marginLeft=x*-1530+"px"
+                }
+        
+            }
+        
+        
+            var interval = setInterval(() => {
+                marginLeft(true)
+            }, time);
+        
+        
+            let container = document.querySelector('.banner-imgBox');
+            // 鼠标经过时清除定时器
+            container.onmouseover = function () {
+                clearInterval(interval);
+            }
+            // 鼠标移开时设置定时器
+            container.onmouseout = function () {
+                // 先清除定时器
+                clearInterval(interval);
+                // 往右滑动并开启定时器
+                // marginLeft(true)
+                interval = setInterval(() => {
+                    marginLeft(true)
+                }, time);
+            }
+        </script>
+
+
+
+
+
             <div id="idvNTXRB" class="container ">
                 <div id="id5UGfvi" class="row ">
                     <div id="idqcBHkR" class="col-lg-12 text-center ">
                         <div id="id8qIgPp" class="section-title ">
-                            <h2 id="id24W9fq">紫韵.星火
+                            <h2 id="id24W9fq">打卡红色足迹 继承革命精神
                             </h2>
-                            <p id="id9l8aeV">打卡红色足迹 继承革命精神
+                            <p id="id9l8aeV">紫芝韵芳华，星火以燎原
                             </p>
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNjUyMzcyMg==&mid=2247484021&idx=1&sn=69dfb310ad795bb175522af76541a52c&chksm=c0e66750f791ee46d2a1020de829cd219f147ab0f20550257cacbaa273b5b7c04b18716999e7&mpshare=1&srcid=0722K54uqzXEPmGU8BG0Th2r&sharer_sharetime=1690020300789&sharer_shareid=b76eec5dfdf37f1b29684caaf9ec68a7&from=groupmessage&scene=1&subscene=10000&sessionid=1693908469&clicktime=1693910533&enterid=1693910533&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6843331-zh_CN-zip&fasttmpl_flag=0&realreporttime=1693910533181&devicetype=android-30&version=28002862&nettype=cmnet&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQjyZpg%2BojR67kq1waw41b3hLwAQIE97dBBAEAAAAAANJaIWv9bp4AAAAOpnltbLcz9gKNyK89dVj0xFPZHB%2FQHWZzmJtP3zfFNZyjCDydHRekDKFNinGMzbxXTpCi61x80QUpHK%2Fc%2FYzxeXkIM0ask1ADx6X4%2BqGcNDE8lKzJTZE7ae95hiGyLHqAuYgNjnKmlNd7Dz4fUiPgyrdkUnm0jVobeNdPhFYyUZHMVPM9EK9feDPvnokt0xrApgWrKM0YoguBd4SRuITTCSTdn7O7aD95%2FnRYavs0ehvrLR%2Fm%2BypfzlNJLIBE5L5eNkoy0Wvor%2BSOdgULGa3agQKfyzAMABGyZg%3D%3D&pass_ticket=NFz2JZVa6O12dcKHjKh0LwNICBVin86UCbU%2FgSgfwbFG5pwYPyHsILMbMP%2FUGTpP&wx_header=3">
+                                <p>
+                                大连理工大学国际信息与软件学院“紫韵.星火”社会实践团
+                            </p>
+                        </a>
+
+
+
+
+
+                        
                         </div>
                     </div>
+
+
+                    
                 </div>
+
+                
+
+
+
                 <div id="idqorxwP" class="row row-0-gutter ">
                     <div id="id4Oen4E" class="col-md-6 col-0-gutter ">
                         <div id="idzvzvcF" class="ot-portfolio-item ">
@@ -75,7 +245,7 @@
                                 <figcaption id="idzAxcLz">
                                     <h2 id="id9OUzV6">河南省安阳市
                                     </h2>
-                                    <p id="idSZIeDk">紫韵.星火
+                                    <p id="idSZIeDk">重走红旗渠，再悟山碑魂
                                     </p>
                                     <a id="idcF4hpv" href="#" data-toggle="modal" data-target="#Modal-1">View more
                                     </a>
@@ -90,7 +260,7 @@
                                 <figcaption id="idGivVdT">
                                     <h2 id="idQMlexf">辽宁省沈阳市
                                     </h2>
-                                    <p id="idp1VBKH">紫韵.星火
+                                    <p id="idp1VBKH">勿忘国耻，警钟长鸣
                                     </p>
                                     <a id="idSrihsw" href="#" data-toggle="modal" data-target="#Modal-2">View more
                                     </a>
@@ -107,7 +277,7 @@
                                 <figcaption id="idbenRic">
                                     <h2 id="idCFqlDr">辽宁省丹东市
                                     </h2>
-                                    <p id="idsoeVAj">紫韵.星火
+                                    <p id="idsoeVAj">抗美援朝 保家卫国
                                     </p>
                                     <a id="id67zrT6" href="#" data-toggle="modal" data-target="#Modal-3">View more
                                     </a>
@@ -122,7 +292,7 @@
                                 <figcaption id="idNP7f96">
                                     <h2 id="idoaATxd">湖南省长沙市
                                     </h2>
-                                    <p id="idPPTIlb">紫韵.星火
+                                    <p id="idPPTIlb">红色潇湘铸忠魂
                                     </p>
                                     <a id="idNjzssx" href="#" data-toggle="modal" data-target="#Modal-4">View more
                                     </a>
@@ -139,29 +309,29 @@
                                 <figcaption id="idqMiVW6">
                                     <h2 id="idaUvKl4">天津市
                                     </h2>
-                                    <p id="idW8pTal">紫韵.星火
+                                    <p id="idW8pTal">辅弼公正随领袖，鞠躬尽瘁强中华
                                     </p>
                                     <a id="idcbIgjW" href="#" data-toggle="modal" data-target="#Modal-5">View more
                                     </a>
                                 </figcaption>
                             </figure>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-0-gutter ">
+                    </div> 
+                    <!-- <div class="col-md-6 col-0-gutter ">
                         <div  class="ot-portfolio-item ">
                             <figure  class="effect-bubba ">
                                 <img  class="img-responsive " src="images/demo/portfolio-6.jpg" alt="img02" />
                                 <figcaption>
                                     <h2>湖南省长沙市
                                     </h2>
-                                    <p >紫韵.星火
+                                    <p >红色潇湘铸忠魂
                                     </p>
                                     <a id="idpWVdTd" href="#" data-toggle="modal" data-target="#Modal-4">View more
                                     </a>
                                 </figcaption>
                             </figure>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -170,8 +340,8 @@
                 <div id="idkIZhB8" class="row ">
                     <div id="idEwmUvO" class="col-lg-12 text-center ">
                         <div id="idKpLmUc" class="section-title ">
-                            <h2 id="id1Ptuqi">关于我们
-                            </h2>
+                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNjUyMzcyMg==&mid=2247484021&idx=1&sn=69dfb310ad795bb175522af76541a52c&chksm=c0e66750f791ee46d2a1020de829cd219f147ab0f20550257cacbaa273b5b7c04b18716999e7&mpshare=1&srcid=0722K54uqzXEPmGU8BG0Th2r&sharer_sharetime=1690020300789&sharer_shareid=b76eec5dfdf37f1b29684caaf9ec68a7&from=groupmessage&scene=1&subscene=10000&clicktime=1693841577&enterid=1693841577&sessionid=0&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6837651-zh_CN-zip&fasttmpl_flag=0&realreporttime=1693841577922&devicetype=android-30&version=28002862&nettype=WIFI&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQ3Mzvd3gWC8ucQHRtNA1o0RLwAQIE97dBBAEAAAAAAGJfOsnLZ%2BAAAAAOpnltbLcz9gKNyK89dVj0SfKw3tUd%2FjmySABWR6fHDEaAEEqCBBO8VIxHe%2F3BNyyViTXeitcRPwUJo9Dx51RjGmGvM8P9%2BSBkS1df1V1lbk%2FXT5GRQlWgr5nl%2BtVX8%2F6ZfNk0EtBsmDfHFvMjC%2Bw1ghpB0ORyjomV6T%2FSn5zCokrv4AAX0ZhS6v%2BFY%2BDEGUqe28JDO3mIOQKt6lEm9R4ftBPpX26u3EEN9b5IVBM4lN8OMeTmpNuax9kYv77we%2FGyjsgmxY8kzevYEZsj58luitxAG2RFYoVBpg%3D%3D&pass_ticket=SjhFOB7xucBe2ic6Ghzx0DLhB9gCoD06lSAqZ3a6XP25JiGdOmLO1%2FScYEWBbcEH&wx_header=3"><h2 id="id1Ptuqi">关于我们
+                            </h2></a>
                         </div>
                     </div>
                 </div>
@@ -224,18 +394,18 @@
                         </div>
                     </div>
                 </div>
-                <div id="id28wSne" class="row row-0-gutter ">
-                    <div id="id6AQd5c" class="col-md-3 col-0-gutter mz-about-default text-center ">
-                        <div id="idpw31S1" class="mz-module-about ">
-                            <i id="id6DTThS" class="fa fa-briefcase ot-circle ">
+                <!-- <div  class="row row-0-gutter ">
+                    <div  class="col-md-3 col-0-gutter mz-about-default text-center ">
+                        <div  class="mz-module-about ">
+                            <i  class="fa fa-briefcase ot-circle ">
                             </i>
                             <h3 id="idsvLEDh">紫韵
                             </h3>
                         </div>
                     </div>
-                    <div id="ideiZ3bM" class="col-md-3 col-0-gutter mz-about-dark text-center ">
-                        <div id="idErjNTp" class="mz-module-about ">
-                            <i id="idsHqPwL" class="fa fa-photo ot-circle ">
+                    <div  class="col-md-3 col-0-gutter mz-about-dark text-center ">
+                        <div  class="mz-module-about ">
+                            <i class="fa fa-photo ot-circle ">
                             </i>
                             <h3 id="idvXf5AF">星火
                         </div>
@@ -256,7 +426,7 @@
                             </h3>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section id="team">
@@ -265,103 +435,123 @@
                     <div id="idNbMMen" class="col-lg-12 text-center ">
                         <div id="idPRXOn8" class="section-title ">
                             <h2 id="id2Dn7Eb">紫韵宣讲
+                                
+                                  
+                                
                             </h2>
                         </div>
                     </div>
                 </div>
-                <div id="idvDFOMv" class="row ">
-                    <div id="idIpf23q" class="col-md-4 ">
-                        <div id="idjAQj7t" class="team-item ">
-                            <div id="idZHAiQe" class="team-image ">
-                                <img id="idNpH7j2" class="img-responsive " src="images/demo/author-2.jpg" alt="author" />
-                            </div>
-                            <div id="idP8iKJp" class="team-text ">
-                                <h3 id="idEv6stx">紫韵宣讲家：
-                                </h3>
-                                <div id="idVrpJjX" class="team-position ">宣讲单位：
-                                </div>
-                                <p id="idHaOwuF">宣讲介绍：
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="idIpf23q" class="col-md-4 ">
-                        <div id="idjAQj7t" class="team-item ">
-                            <div id="idZHAiQe" class="team-image ">
-                                <img id="idNpH7j2" class="img-responsive " src="images/demo/author-2.jpg" alt="author" />
-                            </div>
-                            <div id="idP8iKJp" class="team-text ">
-                                <h3 id="idEv6stx">紫韵宣讲家：
-                                </h3>
-                                <div id="idVrpJjX" class="team-position ">宣讲单位：
-                                </div>
-                                <p id="idHaOwuF">宣讲介绍：
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="idIpf23q" class="col-md-4 ">
-                        <div id="idjAQj7t" class="team-item ">
-                            <div id="idZHAiQe" class="team-image ">
-                                <img id="idNpH7j2" class="img-responsive " src="images/demo/author-2.jpg" alt="author" />
-                            </div>
-                            <div id="idP8iKJp" class="team-text ">
-                                <h3 id="idEv6stx">紫韵宣讲家：
-                                </h3>
-                                <div id="idVrpJjX" class="team-position ">宣讲单位：
-                                </div>
-                                <p id="idHaOwuF">宣讲介绍：
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+               <a href="http://storage.live.com/items/8ACFA6230445AA76!1820:/1-大工红色历史.mp4?authkey=!AOin63nDaVCttug">
+
+              
                     <div id="idvDFOMv" class="row ">
-                        <div id="idIpf23q" class="col-md-4 ">
-                            <div id="idjAQj7t" class="team-item ">
+                        <div class="col-md-4 ">
+                            <div style="height: 600px;"  class="team-item ">
                                 <div id="idZHAiQe" class="team-image ">
-                                    <img id="idNpH7j2" class="img-responsive " src="images/demo/author-2.jpg" alt="author" />
+                                    <img id="idNpH7j2" class="img-responsive " src="images/图片7.jpg" alt="author" />
                                 </div>
                                 <div id="idP8iKJp" class="team-text ">
-                                    <h3 id="idEv6stx">TOM BEKERS
+                                    <h3 >宣讲单位：线上腾讯会议
                                     </h3>
-                                    <div id="idVrpJjX" class="team-position ">CEO & Web Design
+                                    <div  class="team-position ">紫韵宣讲家：王柏慧、徐欣一
                                     </div>
-                                    <p id="idHaOwuF">Mida sit una namet, cons uectetur adipiscing adon elit. Aliquam vitae barasa droma.
+                                    <p >“紫韵・星火”实践团举办“七秩风雨，与国同行”线上宣讲会<br><br>
+                                        队员徐欣一和王柏慧针对大连理工大学的建校历史、校园文化建设、思想教育建设，以及基础设施建设进行了深入的解读，通过生动的叙述和真实感人的故事，拉近了大众与大连理工大学的距离。
+                                        
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div id="idbPhEsk" class="col-md-4 ">
-                            <div id="idhZUGWp" class="team-item ">
+
+                    </a>
+                       <a href="http://storage.live.com/items/8ACFA6230445AA76!1817:/2-二十大宣讲.mp4?authkey=!AOin63nDaVCttug">
+                        <div  class="col-md-4 ">
+                            <div style="height: 600px;"  class="team-item ">
                                 <div id="idgvCwpm" class="team-image ">
-                                    <img id="idsZfHAT" class="img-responsive " src="images/demo/author-6.jpg" alt="author" />
+                                    <img id="idsZfHAT" class="img-responsive " src="images/图片5.jpg" alt="author" />
                                 </div>
                                 <div id="idVphdhx" class="team-text ">
-                                    <h3 id="idattMVZ">LINA GOSATA
+                                    <h3 id="idattMVZ">宣讲单位：福建省漳州市常山北区小学
                                     </h3>
-                                    <div id="idcSMZTd" class="team-position ">Photography
+                                    <div id="idcSMZTd" class="team-position ">紫韵宣讲家：赵成硕 王泽凯 焦子健 杨泽鹏
                                     </div>
-                                    <p id="idiN2bS3">Worsa dona namet, cons uectetur dipiscing adon elit. Aliquam vitae fringilla unda mir.
+                                    <p id="idiN2bS3">赵成硕同学进行《学习贯彻党的二十大精神》团课宣讲，介绍了党的历史事件，二十大的主题、中心任务、战略安排、重大原则、本质要求等。
+                                        王泽凯同学进行的《党在我心中，永远跟党走》主题汇报，介绍了二十大精神关键词，生动演绎了新时代、新征程，党的宏伟蓝图。
+                                        焦子健和杨泽鹏同学进行的《党的十年》相声演绎，生动形象的描绘出这十年跟随党的领导，人民的生活质量发生了巨变。
+                                        <br><br>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div id="id1gOB34" class="col-md-4 ">
-                            <div id="id6ShpdS" class="team-item ">
+                    </a>
+                    <div  class="col-md-4 ">
+                            <div style="height: 600px;"  class="team-item ">
                                 <div id="idG1IkF6" class="team-image ">
-                                    <img id="id6kAv2H" class="img-responsive " src="images/demo/author-4.jpg" alt="author" />
+                                    <a href="http://storage.live.com/items/8ACFA6230445AA76!1836:/4-沈阳线下宣讲会.mp4?authkey=!AOin63nDaVCttug"><img id="id6kAv2H" class="img-responsive " src="images/图片4.jpg" alt="author" /></a>
                                 </div>
                                 <div id="id4SVFVk" class="team-text ">
-                                    <h3 id="idfsGRmO">John BEKERS
+                                    <h3 id="idfsGRmO">宣讲单位：沈阳市康家山监狱
                                     </h3>
-                                    <div id="idHBi7CB" class="team-position ">Marketing
+                                    <div id="idHBi7CB" class="team-position ">紫韵宣讲家：杨泽鹏
                                     </div>
-                                    <p id="idbzJVK2">Dolor sit don namet, cons uectetur beriscing adon elit. Aliquam vitae fringilla unda.
+                                    <p id="idbzJVK2">
+                                        宣讲会上，与会者对东北地区存在的问题进行了深入剖析，并概括了东北振兴新的任务。在东北振兴的起源上，与会者一致认为，要加快东部地区的发展，率先实现全面小康和现代化，东北地区等老工业基地加快调整。此外，要注重培养和吸引高端人才整体创新能力和竞争力并呼吁各界共同参与，汇聚智慧和力量，促进东北地区经济的快速发展。相信在全社会的共同努力下，东北地区必将焕发新的活力，成为中国经济增长的重要引擎之一。
+                                        
                                     </p>
                                 </div>
                             </div>
                         </div>
                 </div>
+                <div id="idvDFOMv" class="row ">
+                    <div  class="col-md-4 ">
+                        <div style="height: 500px;"  class="team-item ">
+                            <div id="idZHAiQe" class="team-image ">
+                                <img id="idNpH7j2" class="img-responsive " src="images/图片1.jpg" alt="author" />
+                            </div>
+                            <div id="idP8iKJp" class="team-text ">
+                                <h3 >紫韵宣讲家：邹志鹏
+                                </h3>
+                                <div  class="team-position ">宣讲单位：辽宁省建平县万寿街道平安地村
+                                </div>
+                                <p>红色宣讲，旨在通过讲述红色历史，传承红色基因，激发青年一代的爱国情怀和奋斗精神。
+                                    今天，我们来到了辽宁省建平县万寿街道平安地村，结合当地历史，开展了富有教育意义的宣讲活动。
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="col-md-4 ">
+                        <div style="height: 500px;" class="team-item ">
+                            <div id="idgvCwpm" class="team-image ">
+                                <img id="idsZfHAT" class="img-responsive " src="images/图片2.jpg" alt="author" />
+                            </div>
+                            <div id="idVphdhx" class="team-text ">
+                                <h3 id="idattMVZ">宣讲单位：宁夏回族自治区银川市兴庆区掌政镇五渡桥村
+                                </h3>
+                                <div id="idcSMZTd" class="team-position ">紫韵宣讲家：徐鲁宁
+                                </div>
+                                <p id="idiN2bS3">实践团追寻习近平总书记于宁夏考察的足迹，围绕“习近平的山海情”“习近平与‘生命之源’”“习近平与‘缚黄沙’”三个部分带领党员们学习了习近平在宁夏关于闽宁协作、吃水用水、防沙固沙等方面重要精神指示。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div  class="col-md-4 ">
+                        <div style="height: 500px;" class="team-item ">
+                            <div id="idG1IkF6" class="team-image ">
+                                <img id="id6kAv2H" class="img-responsive " src="images/图片3.jpg" alt="author" />
+                            </div>
+                            <div id="id4SVFVk" class="team-text ">
+                                <h3 id="idfsGRmO">宣讲单位：河南省平顶山市宝丰县农业机械技术中心
+                                </h3>
+                                <div id="idHBi7CB" class="team-position ">紫韵宣讲家：杨如琳 杨煜培 刘佳楠
+                                </div>
+                               <p>8月5日，大连理工大学“紫韵・星火”社会实践团前往宝丰县农业机械技术中心开展了一次以“追寻习近平的足迹”为主题的红色宣讲。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
             </div>
 <!-- 
         </section>
@@ -429,7 +619,8 @@
                 <i id="idIOB8BV" class="fa fa-angle-up ">
                 </i>
             </a>
-        </p>    
+        </p>  
+         
 		<footer id="idWGzEMq">
             <div id="idn4nS9l" class="container text-center " style="width: max-content; height: 0px;">
                 <p style="font-size: 16px; color: orangered;">
@@ -448,12 +639,17 @@
                         <h4 id="Modal-label-1" class="modal-title ">河南省 安阳市
                         </h4>
                     </div>
-                    <div id="idRViDch" class="modal-body ">
-                        <video id="idEgrxbL" class="img-responsive " src="https://ugc.kizoa.app/klon1/o400069816_9986723.mp4" controls="controls" ></video>
-                        <div id="idTzmVVd" class="modal-works ">
-                            <span id="idwiFj3q">紫韵
+                    <div  class="modal-body " >
+                        
+                        
+                            <img   class="img-responsive" src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZzMwcVNtdDB3ajN1d0VOP2U9MWhnS0Fu.jpg" controls="controls" ></video>
+                            
+                        
+                    
+                        <div  class="modal-works ">
+                            <span >紫韵
                             </span>
-                            <span id="id4dfwOw">星火
+                            <span >星火
                             </span>
                         </div>
                         <p>星火讲解人：刘佳楠，杨煜培，杨如琳
@@ -511,30 +707,30 @@
                             
                         </p>
                     </div>
-                    <div id="idVphFAv" class="modal-footer ">
-                        <button id="idQmjXrJ" class="btn btn-default " type="button" data-dismiss="modal">Close
+                    <div  class="modal-footer ">
+                        <button  class="btn btn-default " type="button" data-dismiss="modal">Close
                         </button>
                     </div>
                 </div>
             </div>
         </div>
         <div id="Modal-2" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Modal-label-2">
-            <div id="idPARtgo" class="modal-dialog " role="document">
-                <div id="id2uuvVO" class="modal-content ">
-                    <div id="idxNtWx8" class="modal-header ">
-                        <button id="idWTdjHq" class="close " type="button" data-dismiss="modal" aria-label="Close">
-                            <span id="id59m7BZ" aria-hidden="true">×
+            <div  class="modal-dialog " role="document">
+                <div  class="modal-content ">
+                    <div  class="modal-header ">
+                        <button  class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span  aria-hidden="true">×
                             </span>
                         </button>
                         <h4 id="Modal-label-2" class="modal-title ">辽宁省 沈阳市
                         </h4>
                     </div>
-                    <div id="id9vBrj1" class="modal-body ">
-                        <video id="idEgrxbL" class="img-responsive " src="https://ugc.kizoa.app/klon1/o400069816_9986723.mp4" controls="controls" ></video>
-                        <div id="idFDTiba" class="modal-works ">
-                            <span id="idb4QOn7">紫韵
+                    <div  class="modal-body ">
+                        <img   class="img-responsive" src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZ09CRW9IZUFLbzBRY2l2P2U9QU1oV1F6.jpg" controls="controls" >
+                        <div  class="modal-works ">
+                            <span>紫韵
                             </span>
-                            <span id="idIhGM8P">星火
+                            <span>星火
                             </span>
                         </div>
                         <p>星火讲解人:杨泽鹏
@@ -583,7 +779,7 @@
                         </h4>
                     </div>
                     <div id="idegUqtH" class="modal-body ">
-                        <video id="idEgrxbL" class="img-responsive " src="https://ugc.kizoa.app/klon1/o400069816_9986723.mp4" controls="controls" ></video>
+                        <img   class="img-responsive" src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqaEdFY0RGWUNhNmlvWUlfP2U9aE51eVR3.jpg" controls="controls" >
                         <div id="idUoJVkk" class="modal-works ">
                             <span id="idabVLGi">紫韵
                             </span>
@@ -632,7 +828,7 @@
                         </h4>
                     </div>
                     <div id="idcs1kmU" class="modal-body ">
-                        <video  class="img-responsive " src="https://ugc.kizoa.app/klon1/o400069816_9986723.mp4" controls="controls" ></video>
+                        <img   class="img-responsive" src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZzh1OVFJLWw2emRnREtfP2U9SmZjRDdr.jpg" controls="controls" >
                         <div  class="modal-works ">
                             <span >紫韵
                             </span>
@@ -684,7 +880,7 @@
                         <h4 id="Modal-label-5" class="modal-title ">天津市
                     </div>
                     <div id="idLcp3km" class="modal-body ">
-                        <video id="idEgrxbL" class="img-responsive " src="https://ugc.kizoa.app/klon1/o400069816_9986723.mp4" controls="controls" ></video>
+                        <img   class="img-responsive" src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqaGpDenZWcER0VklUUHFTP2U9dDV0QzFJ.jpg" controls="controls" >
                         <div id="idS3cIze" class="modal-works ">
                             <span id="idDW57Wj">紫韵
                             </span>
@@ -751,9 +947,215 @@
         </script>
     </div>
     <!--YeMian1htmlEnd-->
+    
 
 </body>
 <!--YeMian1jslinkStart -->
+
+
+
+
+
+
+<style>
+    /* 设置整体大框架 */
+    .overall{
+        /* 设置窗口大小 */
+        width: 900px;
+        height: 500px;
+
+        /* 将弹性 <div> 元素的所有项目的居中对齐 */
+      align-items: center; 
+
+        /* 设置图片外边距 左右居中 上方5% */
+        margin: 5% auto;        
+    }
+
+    .content{
+        /* 设置相对定位 */
+        position: relative;
+        height: 400px;
+    }
+
+    .content ul{
+        /* 去除标签<ul><li></li></ul>默认加的样式 */
+        list-style-type: none;
+    }
+
+    .content ul>li{
+        width: 600px;
+        height: 300px;
+
+        /* 设置绝对定位 */
+        position: absolute;
+
+        /* 设置过度效果 时间为1s */
+        transition: 1s;
+
+        /* 设置最大透明度 默认一开始图片为透明的 当下面js加载的时候
+            第一张图片设置为不透明
+        */
+        opacity: 0;
+    }
+    
+    /* 设置每个图片的样式 */
+    .content ul>li img{    
+        /* 设置每一张图片的大小 */
+        width: 900px;
+        height: 500px;
+
+        /* 设置圆角边框 */
+        border-radius: 5%;
+     
+        /* 设置边框样式 */
+        border: 5px solid #0e0600;        
+    }
+
+    /* 设置轮播图下面的小点 */
+    .content ol{
+        /* 设置相对定位 */
+        position: relative;
+
+        /* 设置网格布局 */
+        display: grid;
+        
+        /* 设置网格布局中的列数及宽度 */
+        grid-template-columns: repeat(3, 75px);
+
+        /* 设置网格布局中的行数及宽度 */
+        grid-template-rows: auto;
+
+        /* 设置网格行与列之间的间隙 */
+        /* 间隙为1em */
+        grid-gap: 1em;
+        gap:1em;
+
+        /* 右浮动 */
+        float: right;
+
+        /* 设置浮点的向上的内边距 */
+        margin-top: 450px;
+
+        /* 去除列表样式 */
+        list-style: none;
+
+        /* 把图像的上边缘设置在其包含元素上边缘之下0px高的位置 */
+        top: 0;
+
+        /* 把图像的左边缘设置在其包含元素上边缘之下0px高的位置 */
+        left: 0;
+    }
+
+    .content ol li{
+        /* 设置每个小点的大小 */
+        width: 25px;
+        height: 10px;
+
+        /* 设置里面的文字的大小 */
+        font-size: 15px;
+
+        /* line-height 属性设置行间的距离（行高） */
+        line-height: 20px;
+
+        /* 浮动左对齐 */
+        float: left;
+
+        /* 设置文本居中 */
+        text-align: center;
+
+        /* 把表格做成圆点 */
+        border-radius: 2em;
+
+        /* 设置圆点的边框 */
+        border: 5px solid #af9d9d;
+    }
+</style>
+
+
+
+
+
+<script>
+// 当页面载入的时候加载这个函数
+window.onload = function()
+{
+
+// 获取大盒子的内容 为content的第一个元素 也就是ul中的内容
+var content = this.document.getElementsByClassName("content")[0];
+
+// 获取ul中的li
+var li = content.getElementsByTagName("li");
+
+// 函数传入两个参数，(i,j)
+function fun(i, j)
+{//转换图片函数，就是把透明度改了一下        
+    li[i].style.opacity=1;
+    li[j].style.opacity=0;
+
+    // 然后也把小图标的颜色改一下
+    // 把图标改成白色
+    // 如果图片数量发生改变 那么下面的3也要变成图片的数量
+    li[i + 3].style.backgroundColor = "#ffffff";
+
+    // 把图标改成透明
+    li[j + 3].style.backgroundColor = "#00000000";
+}
+
+// 默认情况下轮播图为第一张
+fun(0, 1);//初始化下
+var i = 0;
+function auto()
+{//轮播循环函数
+    i ++;
+    // 当数组越界的时候
+    if(i >= 3)
+    {
+    // 置为0
+        i = 0;
+        // 然后递归重新开始
+        // 这里的2位3-1的意思
+        fun(0, 2);
+    }
+    else
+    {
+        // 反之递归
+        fun(i, i - 1);
+    } 
+}
+// 设置变化的时间
+timer = this.setInterval(auto, 2000);
+
+// 设置鼠标在轮播图上的时候 轮播图就停止播放
+content.onmouseover = function () 
+{ 
+    //鼠标划上去，停止轮播
+    clearInterval(timer);
+}
+
+// 设置鼠标在轮播图上的时候 轮播图就继续播放
+content.onmouseout = function () 
+{ 
+    //鼠标划出，继续轮播
+    timer = setInterval(auto, 2000); //调用定时器
+}
+var j = 0;
+for(; j < 3; j++)
+{
+    //点击小图标也可以转换图片
+    li[j + 3].index = j;
+    // 当点击小图标进行的函数
+    li[j + 3].onclick = function()
+    {
+        fun(this.index, i)
+        i = this.index;
+    }
+}
+}
+</script>
+
+
+
+
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <script>
