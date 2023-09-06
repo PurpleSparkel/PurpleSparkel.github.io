@@ -1,68 +1,275 @@
 <!DOCTYPE html>
 <html lang="zh">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<link rel="icon" href="favicon.ico">
-		<title>紫韵·星火</title>
-		<!-- Bootstrap core CSS -->
-		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-        <link href="css/bootstrap.minv2.css" rel="stylesheet">
-		<link rel="stylesheet" href="thtps://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<!-- Custom styles for this template -->
-		<link href="css/style.css" rel="stylesheet">
-	</head>
-	<body id="page-top">
-		<!-- Navigation -->
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo2.png" alt="logo2" class="logo2-image"></a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="hidden">
-							<a href="#page-top"></a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#about">关于我们</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#portfolio">星火展馆</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#team">紫韵宣讲</a>
-						</li>
-<!-- 
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>紫韵·星火</title>
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.minv2.css" rel="stylesheet">
+    <link rel="stylesheet" href="thtps://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo2.png" alt="logo2"
+                        class="logo2-image"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">关于我们</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">星火展馆</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">紫韵宣讲</a>
+                    </li>
+                    <!-- 
 						<li>
 							<a class="page-scroll" href="#contact">联系我们</a>
 						</li>
                          -->
-					</ul>
-				</div>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+
+    <div class='parent'>
+        <div class='slider'>
+            <button title="swiper" type="button" id='right' class='right' name="button">
+
+                <svg version="1.1" id="Capa_1" width='40px' height='40px ' xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
+                    style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                    <g>
+                        <path style='fill: #9d9d9d;' d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                      c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
+                      ">
+                    </g>
+
+                </svg>
+
+            </button>
+            <button title="swiper" type="button" id='left' class='left' name="button">
+                <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
+                    style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
+                    <g>
+                        <path style='fill: #9d9d9d;' d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                      c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z">
+                    </g>
+                </svg>
+            </button>
+            <svg id='svg2' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle id='circle1' class='circle1 steap' cx="34px" cy="49%" r="20" />
+                <circle id='circle2' class='circle2 steap' cx="34px" cy="49%" r="100" />
+                <circle id='circle3' class='circle3 steap' cx="34px" cy="49%" r="180" />
+                <circle id='circle4' class='circle4 steap' cx="34px" cy="49%" r="260" />
+                <circle id='circle5' class='circle5 steap' cx="34px" cy="49%" r="340" />
+                <circle id='circle6' class='circle6 steap' cx="34px" cy="49%" r="420" />
+                <circle id='circle7' class='circle7 steap' cx="34px" cy="49%" r="500" />
+                <circle id='circle8' class='circle8 steap' cx="34px" cy="49%" r="580" />
+                <circle id='circle9' class='circle9 steap' cx="34px" cy="49%" r="660" />
+            </svg>
+            <svg id='svg1' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle id='circle10' class='circle10 steap' cx="648px" cy="49%" r="20" />
+                <circle id='circle11' class='circle11 steap' cx="648px" cy="49%" r="100" />
+                <circle id='circle12' class='circle12 steap' cx="648px" cy="49%" r="180" />
+                <circle id='circle13' class='circle13 steap' cx="648px" cy="49%" r="260" />
+                <circle id='circle14' class='circle14 steap' cx="648px" cy="49%" r="340" />
+                <circle id='circle15' class='circle15 steap' cx="648px" cy="49%" r="420" />
+                <circle id='circle16' class='circle16 steap' cx="648px" cy="49%" r="500" />
+                <circle id='circle17' class='circle17 steap' cx="648px" cy="49%" r="580" />
+                <circle id='circle18' class='circle18 steap' cx="648px" cy="49%" r="660" />
+            </svg>
+            <div id='slide1' class='slide1 up1'></div>
+            <div id='slide2' class='slide2'></div>
+            <div id='slide3' class='slide3'></div>
+            <div id='slide4' class='slide4'></div>
+            <div id='slide5' class='slide5'></div>
+
+
+        </div>
+    </div>
+    <script>
+        var curpage = 1;
+        var sliding = false;
+        var click = true;
+        var left = document.getElementById('left');
+        var right = document.getElementById('right');
+        var pagePrefix = 'slide';
+        var pageShift = 500;
+        var transitionPrefix = 'circle';
+        var svg = true;
+
+        function leftSlide() {
+            if (click) {
+                if (curpage == 1) curpage = 6;
+                console.log('woek');
+                sliding = true;
+                curpage--;
+                svg = true;
+                click = false;
+                for (k = 1; k <= 5; k++) {
+                    var a1 = document.getElementById(pagePrefix + k);
+                    a1.className += ' tran';
+                }
+                setTimeout(() => {
+                    move();
+                }, 200);
+                setTimeout(() => {
+                    for (k = 1; k <= 5; k++) {
+                        var a1 = document.getElementById(pagePrefix + k);
+                        a1.classList.remove('tran');
+                    };
+                }, 1400);
+            }
+        }
+
+
+        function rightSlide() {
+            if (click) {
+                if (curpage == 5) curpage = 0;
+                console.log('woek');
+                sliding = true;
+                curpage++;
+                svg = false;
+                click = false;
+                for (k = 1; k <= 5; k++) {
+                    var a1 = document.getElementById(pagePrefix + k);
+                    a1.className += ' tran';
+                }
+                setTimeout(() => {
+                    move();
+                }, 200);
+                setTimeout(() => {
+                    for (k = 1; k <= 5; k++) {
+                        var a1 = document.getElementById(pagePrefix + k);
+                        a1.classList.remove('tran');
+                    };
+                }, 1400);
+            }
+        }
+
+
+        function move() {
+            if (sliding) {
+                sliding = false;
+                if (svg) {
+                    for (j = 1; j <= 9; j++) {
+                        var c = document.getElementById(transitionPrefix + j);
+                        c.classList.remove("steap");
+                        c.setAttribute("class", (transitionPrefix + j) + " streak")
+                        console.log('streak');
+                    }
+                } else {
+                    for (j = 10; j <= 18; j++) {
+                        var c = document.getElementById(transitionPrefix + j);
+                        c.classList.remove("steap");
+                        c.setAttribute("class", (transitionPrefix + j) + " streak")
+                        console.log('streak');
+                    }
+                }
+
+                // for(k=1;k<=4;k++){
+                //   var a1 = document.getElementById(pagePrefix + k);
+                //   a1.className += ' tran';
+                // }
+
+                setTimeout(() => {
+                    for (i = 1; i <= 5; i++) {
+                        if (i == curpage) {
+                            var a = document.getElementById(pagePrefix + i);
+                            a.className += ' up1';
+                        } else {
+                            var b = document.getElementById(pagePrefix + i);
+                            b.classList.remove("up1");
+                        }
+                    };
+                    sliding = true;
+                }, 600);
+                setTimeout(() => {
+                    click = true;
+                }, 1700);
 
 
 
+                setTimeout(() => {
+                    if (svg) {
+                        for (j = 1; j <= 9; j++) {
+                            var c = document.getElementById(transitionPrefix + j);
+                            c.classList.remove("streak");
+                            c.setAttribute("class", (transitionPrefix + j) + " steap");
+                        }
+                    } else {
+                        for (j = 10; j <= 18; j++) {
+                            var c = document.getElementById(transitionPrefix + j);
+                            c.classList.remove("streak");
+                            c.setAttribute("class", (transitionPrefix + j) + " steap");
+                        }
+                        sliding = true;
+                    }
+                }, 850);
+                setTimeout(() => {
+                    click = true;
+                }, 1700);
+            }
 
+        }
 
+        left.onmousedown = () => {
+            leftSlide();
+        }
 
+        right.onmousedown = () => {
+            rightSlide();
+        }
 
-        
-        <div class="blockLine"></div>
+        document.onkeydown = (e) => {
+            if (e.keyCode == 37) {
+                leftSlide();
+
+            }
+            else if (e.keyCode == 39) {
+                rightSlide();
+
+            }
+        }
+
+        //for codepen header
+        setTimeout(() => {
+            rightSlide();
+
+        }, 500)
+
+    </script>
+    <!-- <div class="blockLine"></div>
         <section id="portfolio">
 
             <style>
@@ -136,8 +343,8 @@
                     <div class="on"></div>
                     <div class="on"></div>
                 </div>
-                <img class="banner-imgBox-left" src="images/left.png" onclick="marginLeft(false)">
-                <img class="banner-imgBox-right" src="images/right.png" onclick="marginLeft(true)">
+                <img alt="" class="banner-imgBox-left" src="images/left.png" onclick="marginLeft(false)">
+                <img alt="" class="banner-imgBox-right" src="images/right.png" onclick="marginLeft(true)">
             </div>
         
         </body>
@@ -201,200 +408,204 @@
                     marginLeft(true)
                 }, time);
             }
-        </script>
+        </script> -->
 
 
 
 
 
-            <div id="idvNTXRB" class="container ">
-                <div id="id5UGfvi" class="row ">
-                    <div id="idqcBHkR" class="col-lg-12 text-center ">
-                        <div id="id8qIgPp" class="section-title ">
-                            <h2 id="id24W9fq">打卡红色足迹 继承革命精神
-                            </h2>
-                            <p id="id9l8aeV">紫芝韵芳华，星火以燎原
-                            </p>
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNjUyMzcyMg==&mid=2247484021&idx=1&sn=69dfb310ad795bb175522af76541a52c&chksm=c0e66750f791ee46d2a1020de829cd219f147ab0f20550257cacbaa273b5b7c04b18716999e7&mpshare=1&srcid=0722K54uqzXEPmGU8BG0Th2r&sharer_sharetime=1690020300789&sharer_shareid=b76eec5dfdf37f1b29684caaf9ec68a7&from=groupmessage&scene=1&subscene=10000&sessionid=1693908469&clicktime=1693910533&enterid=1693910533&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6843331-zh_CN-zip&fasttmpl_flag=0&realreporttime=1693910533181&devicetype=android-30&version=28002862&nettype=cmnet&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQjyZpg%2BojR67kq1waw41b3hLwAQIE97dBBAEAAAAAANJaIWv9bp4AAAAOpnltbLcz9gKNyK89dVj0xFPZHB%2FQHWZzmJtP3zfFNZyjCDydHRekDKFNinGMzbxXTpCi61x80QUpHK%2Fc%2FYzxeXkIM0ask1ADx6X4%2BqGcNDE8lKzJTZE7ae95hiGyLHqAuYgNjnKmlNd7Dz4fUiPgyrdkUnm0jVobeNdPhFYyUZHMVPM9EK9feDPvnokt0xrApgWrKM0YoguBd4SRuITTCSTdn7O7aD95%2FnRYavs0ehvrLR%2Fm%2BypfzlNJLIBE5L5eNkoy0Wvor%2BSOdgULGa3agQKfyzAMABGyZg%3D%3D&pass_ticket=NFz2JZVa6O12dcKHjKh0LwNICBVin86UCbU%2FgSgfwbFG5pwYPyHsILMbMP%2FUGTpP&wx_header=3">
-                                <p>
-                                大连理工大学国际信息与软件学院“紫韵.星火”社会实践团
-                            </p>
-                        </a>
+    <div id="idvNTXRB" class="container ">
+        <div id="id5UGfvi" class="row ">
+            <div id="idqcBHkR" class="col-lg-12 text-center ">
+                <div id="id8qIgPp" class="section-title ">
+                    <h2 id="id24W9fq">打卡红色足迹 继承革命精神
+                    </h2>
+                    <p id="id9l8aeV">紫芝韵芳华，星火以燎原
+                    </p>
+                    <a
+                        href="https://mp.weixin.qq.com/s?__biz=MzkwNjUyMzcyMg==&mid=2247484021&idx=1&sn=69dfb310ad795bb175522af76541a52c&chksm=c0e66750f791ee46d2a1020de829cd219f147ab0f20550257cacbaa273b5b7c04b18716999e7&mpshare=1&srcid=0722K54uqzXEPmGU8BG0Th2r&sharer_sharetime=1690020300789&sharer_shareid=b76eec5dfdf37f1b29684caaf9ec68a7&from=groupmessage&scene=1&subscene=10000&sessionid=1693908469&clicktime=1693910533&enterid=1693910533&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6843331-zh_CN-zip&fasttmpl_flag=0&realreporttime=1693910533181&devicetype=android-30&version=28002862&nettype=cmnet&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQjyZpg%2BojR67kq1waw41b3hLwAQIE97dBBAEAAAAAANJaIWv9bp4AAAAOpnltbLcz9gKNyK89dVj0xFPZHB%2FQHWZzmJtP3zfFNZyjCDydHRekDKFNinGMzbxXTpCi61x80QUpHK%2Fc%2FYzxeXkIM0ask1ADx6X4%2BqGcNDE8lKzJTZE7ae95hiGyLHqAuYgNjnKmlNd7Dz4fUiPgyrdkUnm0jVobeNdPhFYyUZHMVPM9EK9feDPvnokt0xrApgWrKM0YoguBd4SRuITTCSTdn7O7aD95%2FnRYavs0ehvrLR%2Fm%2BypfzlNJLIBE5L5eNkoy0Wvor%2BSOdgULGa3agQKfyzAMABGyZg%3D%3D&pass_ticket=NFz2JZVa6O12dcKHjKh0LwNICBVin86UCbU%2FgSgfwbFG5pwYPyHsILMbMP%2FUGTpP&wx_header=3">
+                        <p>
+                            大连理工大学国际信息与软件学院“紫韵.星火”社会实践团
+                        </p>
+                    </a>
 
 
 
 
 
-                        
-                        </div>
-                    </div>
 
-
-                    
-                </div>
-
-                
-
-
-
-                <div id="idqorxwP" class="row row-0-gutter ">
-                    <div id="id4Oen4E" class="col-md-6 col-0-gutter ">
-                        <div id="idzvzvcF" class="ot-portfolio-item ">
-                            <figure id="idZFbVL3" class="effect-bubba ">
-                                <img id="idwiHDXj" class="img-responsive " src="images/demo/portfolio-1.jpg" alt="img02" />
-                                <figcaption id="idzAxcLz">
-                                    <h2 id="id9OUzV6">河南省安阳市
-                                    </h2>
-                                    <p id="idSZIeDk">重走红旗渠，再悟山碑魂
-                                    </p>
-                                    <a id="idcF4hpv" href="#" data-toggle="modal" data-target="#Modal-1">View more
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div id="idUSISDg" class="col-md-6 col-0-gutter ">
-                        <div id="idbFvmkI" class="ot-portfolio-item ">
-                            <figure id="idnbE4iE" class="effect-bubba ">
-                                <img id="idB14Bki" class="img-responsive " src="images/demo/portfolio-2.jpg" alt="img02" />
-                                <figcaption id="idGivVdT">
-                                    <h2 id="idQMlexf">辽宁省沈阳市
-                                    </h2>
-                                    <p id="idp1VBKH">勿忘国耻，警钟长鸣
-                                    </p>
-                                    <a id="idSrihsw" href="#" data-toggle="modal" data-target="#Modal-2">View more
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div id="idRlVM8i" class="row row-0-gutter ">
-                    <div id="iduVJHmi" class="col-md-6 col-0-gutter ">
-                        <div id="idFl68wP" class="ot-portfolio-item ">
-                            <figure id="id9nnFo1" class="effect-bubba ">
-                                <img id="idqndcQ2" class="img-responsive " src="images/demo/portfolio-3.jpg" alt="img02" />
-                                <figcaption id="idbenRic">
-                                    <h2 id="idCFqlDr">辽宁省丹东市
-                                    </h2>
-                                    <p id="idsoeVAj">抗美援朝 保家卫国
-                                    </p>
-                                    <a id="id67zrT6" href="#" data-toggle="modal" data-target="#Modal-3">View more
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div id="idLoCuIS" class="col-md-6 col-0-gutter ">
-                        <div id="idvUm4CB" class="ot-portfolio-item ">
-                            <figure id="idEUesp4" class="effect-bubba ">
-                                <img id="idOcxTcH" class="img-responsive " src="images/demo/portfolio-4.jpg" alt="img02" />
-                                <figcaption id="idNP7f96">
-                                    <h2 id="idoaATxd">湖南省长沙市
-                                    </h2>
-                                    <p id="idPPTIlb">红色潇湘铸忠魂
-                                    </p>
-                                    <a id="idNjzssx" href="#" data-toggle="modal" data-target="#Modal-4">View more
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div id="idM8rkrw" class="row row-0-gutter ">
-                    <div id="idX9Fkmp" class="col-md-6 col-0-gutter ">
-                        <div id="idXRgK5T" class="ot-portfolio-item ">
-                            <figure id="idfzGQWj" class="effect-bubba ">
-                                <img id="id8X2jvZ" class="img-responsive " src="images/demo/portfolio-5.jpg" alt="img02" />
-                                <figcaption id="idqMiVW6">
-                                    <h2 id="idaUvKl4">天津市
-                                    </h2>
-                                    <p id="idW8pTal">辅弼公正随领袖，鞠躬尽瘁强中华
-                                    </p>
-                                    <a id="idcbIgjW" href="#" data-toggle="modal" data-target="#Modal-5">View more
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div> 
-                    <!-- <div class="col-md-6 col-0-gutter ">
-                        <div  class="ot-portfolio-item ">
-                            <figure  class="effect-bubba ">
-                                <img  class="img-responsive " src="images/demo/portfolio-6.jpg" alt="img02" />
-                                <figcaption>
-                                    <h2>湖南省长沙市
-                                    </h2>
-                                    <p >红色潇湘铸忠魂
-                                    </p>
-                                    <a id="idpWVdTd" href="#" data-toggle="modal" data-target="#Modal-4">View more
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div> -->
                 </div>
             </div>
-        </section>
-        <section id="about" class="mz-module ">
-            <div id="idbmN9BV" class="container light-bg ">
-                <div id="idkIZhB8" class="row ">
-                    <div id="idEwmUvO" class="col-lg-12 text-center ">
-                        <div id="idKpLmUc" class="section-title ">
-                            <a href="https://mp.weixin.qq.com/s?__biz=MzkwNjUyMzcyMg==&mid=2247484021&idx=1&sn=69dfb310ad795bb175522af76541a52c&chksm=c0e66750f791ee46d2a1020de829cd219f147ab0f20550257cacbaa273b5b7c04b18716999e7&mpshare=1&srcid=0722K54uqzXEPmGU8BG0Th2r&sharer_sharetime=1690020300789&sharer_shareid=b76eec5dfdf37f1b29684caaf9ec68a7&from=groupmessage&scene=1&subscene=10000&clicktime=1693841577&enterid=1693841577&sessionid=0&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6837651-zh_CN-zip&fasttmpl_flag=0&realreporttime=1693841577922&devicetype=android-30&version=28002862&nettype=WIFI&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQ3Mzvd3gWC8ucQHRtNA1o0RLwAQIE97dBBAEAAAAAAGJfOsnLZ%2BAAAAAOpnltbLcz9gKNyK89dVj0SfKw3tUd%2FjmySABWR6fHDEaAEEqCBBO8VIxHe%2F3BNyyViTXeitcRPwUJo9Dx51RjGmGvM8P9%2BSBkS1df1V1lbk%2FXT5GRQlWgr5nl%2BtVX8%2F6ZfNk0EtBsmDfHFvMjC%2Bw1ghpB0ORyjomV6T%2FSn5zCokrv4AAX0ZhS6v%2BFY%2BDEGUqe28JDO3mIOQKt6lEm9R4ftBPpX26u3EEN9b5IVBM4lN8OMeTmpNuax9kYv77we%2FGyjsgmxY8kzevYEZsj58luitxAG2RFYoVBpg%3D%3D&pass_ticket=SjhFOB7xucBe2ic6Ghzx0DLhB9gCoD06lSAqZ3a6XP25JiGdOmLO1%2FScYEWBbcEH&wx_header=3"><h2 id="id1Ptuqi">关于我们
-                            </h2></a>
+
+
+
+        </div>
+
+
+
+
+
+        <div id="idqorxwP" class="row row-0-gutter ">
+            <div id="id4Oen4E" class="col-md-6 col-0-gutter ">
+                <div id="idzvzvcF" class="ot-portfolio-item ">
+                    <figure id="idZFbVL3" class="effect-bubba ">
+                        <img id="idwiHDXj" class="img-responsive " src="images/demo/portfolio-1.jpg" alt="img02" />
+                        <figcaption id="idzAxcLz">
+                            <h2 id="id9OUzV6">河南省安阳市
+                            </h2>
+                            <p id="idSZIeDk">重走红旗渠，再悟山碑魂
+                            </p>
+                            <a id="idcF4hpv" href="#" data-toggle="modal" data-target="#Modal-1">View more
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div id="idUSISDg" class="col-md-6 col-0-gutter ">
+                <div id="idbFvmkI" class="ot-portfolio-item ">
+                    <figure id="idnbE4iE" class="effect-bubba ">
+                        <img id="idB14Bki" class="img-responsive " src="images/demo/portfolio-2.jpg" alt="img02" />
+                        <figcaption id="idGivVdT">
+                            <h2 id="idQMlexf">辽宁省沈阳市
+                            </h2>
+                            <p id="idp1VBKH">勿忘国耻，警钟长鸣
+                            </p>
+                            <a id="idSrihsw" href="#" data-toggle="modal" data-target="#Modal-2">View more
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div id="idRlVM8i" class="row row-0-gutter ">
+            <div id="iduVJHmi" class="col-md-6 col-0-gutter ">
+                <div id="idFl68wP" class="ot-portfolio-item ">
+                    <figure id="id9nnFo1" class="effect-bubba ">
+                        <img id="idqndcQ2" class="img-responsive " src="images/demo/portfolio-3.jpg" alt="img02" />
+                        <figcaption id="idbenRic">
+                            <h2 id="idCFqlDr">辽宁省丹东市
+                            </h2>
+                            <p id="idsoeVAj">抗美援朝 保家卫国
+                            </p>
+                            <a id="id67zrT6" href="#" data-toggle="modal" data-target="#Modal-3">View more
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div id="idLoCuIS" class="col-md-6 col-0-gutter ">
+                <div id="idvUm4CB" class="ot-portfolio-item ">
+                    <figure id="idfzGQWj" class="effect-bubba ">
+                        <img id="id8X2jvZ" class="img-responsive " src="images/demo/portfolio-5.jpg" alt="img02" />
+                        <figcaption id="idqMiVW6">
+                            <h2 id="idaUvKl4">天津市
+                            </h2>
+                            <p id="idW8pTal">辅弼公正随领袖，鞠躬尽瘁强中华
+                            </p>
+                            <a id="idcbIgjW" href="#" data-toggle="modal" data-target="#Modal-5">View more
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div id="idM8rkrw" class="row row-0-gutter ">
+            <div id="idX9Fkmp" class="col-md-6 col-0-gutter ">
+                <div id="idXRgK5T" class="ot-portfolio-item ">
+                    <figure id="idEUesp4" class="effect-bubba ">
+                        <img id="idOcxTcH" class="img-responsive " src="images/demo/portfolio-4.jpg" alt="img02" />
+                        <figcaption id="idNP7f96">
+                            <h2 id="idoaATxd">湖南省长沙市
+                            </h2>
+                            <p id="idPPTIlb">红色潇湘铸忠魂
+                            </p>
+                            <a id="idNjzssx" href="#" data-toggle="modal" data-target="#Modal-4">View more
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-6 col-0-gutter ">
+                <div class="ot-portfolio-item ">
+                    <figure class="effect-bubba ">
+                        <img class="img-responsive " src="images/demo/portfolio-6.jpg" alt="img02" />
+                        <figcaption>
+                            <h2>宁夏回族自治区
+                            </h2>
+                            <p>大漠孤烟直·长河落日圆
+                            </p>
+                            <a id="idpWVdTd" href="#" data-toggle="modal" data-target="#Modal-6">View more
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="about" class="mz-module ">
+        <div id="idbmN9BV" class="container light-bg ">
+            <div id="idkIZhB8" class="row ">
+                <div id="idEwmUvO" class="col-lg-12 text-center ">
+                    <div id="idKpLmUc" class="section-title ">
+                        <a
+                            href="https://mp.weixin.qq.com/s?__biz=MzkwNjUyMzcyMg==&mid=2247484021&idx=1&sn=69dfb310ad795bb175522af76541a52c&chksm=c0e66750f791ee46d2a1020de829cd219f147ab0f20550257cacbaa273b5b7c04b18716999e7&mpshare=1&srcid=0722K54uqzXEPmGU8BG0Th2r&sharer_sharetime=1690020300789&sharer_shareid=b76eec5dfdf37f1b29684caaf9ec68a7&from=groupmessage&scene=1&subscene=10000&clicktime=1693841577&enterid=1693841577&sessionid=0&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6837651-zh_CN-zip&fasttmpl_flag=0&realreporttime=1693841577922&devicetype=android-30&version=28002862&nettype=WIFI&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQ3Mzvd3gWC8ucQHRtNA1o0RLwAQIE97dBBAEAAAAAAGJfOsnLZ%2BAAAAAOpnltbLcz9gKNyK89dVj0SfKw3tUd%2FjmySABWR6fHDEaAEEqCBBO8VIxHe%2F3BNyyViTXeitcRPwUJo9Dx51RjGmGvM8P9%2BSBkS1df1V1lbk%2FXT5GRQlWgr5nl%2BtVX8%2F6ZfNk0EtBsmDfHFvMjC%2Bw1ghpB0ORyjomV6T%2FSn5zCokrv4AAX0ZhS6v%2BFY%2BDEGUqe28JDO3mIOQKt6lEm9R4ftBPpX26u3EEN9b5IVBM4lN8OMeTmpNuax9kYv77we%2FGyjsgmxY8kzevYEZsj58luitxAG2RFYoVBpg%3D%3D&pass_ticket=SjhFOB7xucBe2ic6Ghzx0DLhB9gCoD06lSAqZ3a6XP25JiGdOmLO1%2FScYEWBbcEH&wx_header=3">
+                            <h2 id="id1Ptuqi">关于我们
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="id3VhQ8P" class="row ">
+                <div id="id2Lf9tB" class="col-md-6 text-center ">
+                    <div id="idf9E7b5" class="mz-about-container ">
+                        <img src="images/logo1.jpg" alt="logo1" class="logo1-image " />
+                    </div>
+                </div>
+                <div id="idwwHF8j" class="col-md-6 ">
+                    <div id="idvZ1a6K" class="skillbar-item ">
+                        <div id="idLwo7xt" class="skillbar " data-percent="90%">
+                            <h3 id="idvwvGNa">“缘起红蓝，紫芝芳华”
+                            </h3>
+                            <div id="idol7fWi" class="skillbar-bar ">
+                                <div id="idSqVMPG" class="skillbar-percent uM35Pbl">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="idrSvOFQ" class="skillbar-item ">
+                        <div id="idliVMb3" class="skillbar " data-percent="80%">
+                            <h3 id="id39uiZs">实践队因此得名“紫韵”,队徽也选择了紫色系为主要颜色。
+                            </h3>
+                            <div id="idspZfr8" class="skillbar-bar ">
+                                <div id="idxUdqvN" class="skillbar-percent uDRkMAe">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="idxLG7Bg" class="skillbar-item ">
+                        <div id="idCkE8qf" class="skillbar " data-percent="85%">
+                            <h3 id="idVgqHBr">中心图案是绽放的星火，代表着团队的每个人紧密团结在一起
+                            </h3>
+                            <div id="idImdeVT" class="skillbar-bar ">
+                                <div id="idtsjWhi" class="skillbar-percent uizoSNq">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="idWPanSN" class="skillbar-item ">
+                        <div id="id1U7hjX" class="skillbar " data-percent="70%">
+                            <h3 id="idCUtl8h">星星，散布于星火的四周，象征着实践团“聚是一团火，散作满天星”。
+                            </h3>
+                            <div id="idUmkpnJ" class="skillbar-bar ">
+                                <div id="idhCqbW7" class="skillbar-percent uhbMzxr">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="id3VhQ8P" class="row ">
-                    <div id="id2Lf9tB" class="col-md-6 text-center ">
-                        <div id="idf9E7b5" class="mz-about-container ">
-                            <img  src="images/logo1.jpg" alt="logo1" class="logo1-image "/>
-                        </div>
-                    </div>
-                    <div id="idwwHF8j" class="col-md-6 ">
-                        <div id="idvZ1a6K" class="skillbar-item ">
-                            <div id="idLwo7xt" class="skillbar " data-percent="90%">
-                                <h3 id="idvwvGNa">“缘起红蓝，紫芝芳华”
-                                </h3>
-                                <div id="idol7fWi" class="skillbar-bar ">
-                                    <div id="idSqVMPG" class="skillbar-percent uM35Pbl">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="idrSvOFQ" class="skillbar-item ">
-                            <div id="idliVMb3" class="skillbar " data-percent="80%">
-                                <h3 id="id39uiZs">实践队因此得名“紫韵”,队徽也选择了紫色系为主要颜色。
-                                </h3>
-                                <div id="idspZfr8" class="skillbar-bar ">
-                                    <div id="idxUdqvN" class="skillbar-percent uDRkMAe">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="idxLG7Bg" class="skillbar-item ">
-                            <div id="idCkE8qf" class="skillbar " data-percent="85%">
-                                <h3 id="idVgqHBr">中心图案是绽放的星火，代表着团队的每个人紧密团结在一起
-                                </h3>
-                                <div id="idImdeVT" class="skillbar-bar ">
-                                    <div id="idtsjWhi" class="skillbar-percent uizoSNq">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="idWPanSN" class="skillbar-item ">
-                            <div id="id1U7hjX" class="skillbar " data-percent="70%">
-                                <h3 id="idCUtl8h">星星，散布于星火的四周，象征着实践团“聚是一团火，散作满天星”。
-                                </h3>
-                                <div id="idUmkpnJ" class="skillbar-bar ">
-                                    <div id="idhCqbW7" class="skillbar-percent uhbMzxr">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div  class="row row-0-gutter ">
+            </div>
+            <!-- <div  class="row row-0-gutter ">
                     <div  class="col-md-3 col-0-gutter mz-about-default text-center ">
                         <div  class="mz-module-about ">
                             <i  class="fa fa-briefcase ot-circle ">
@@ -427,133 +638,136 @@
                         </div>
                     </div>
                 </div> -->
+        </div>
+    </section>
+    <section id="team">
+        <div id="idZN9U9v" class="container ">
+            <div id="idXejXSC" class="row ">
+                <div id="idNbMMen" class="col-lg-12 text-center ">
+                    <div id="idPRXOn8" class="section-title ">
+                        <h2 id="id2Dn7Eb">紫韵宣讲
+
+
+
+                        </h2>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section id="team">
-            <div id="idZN9U9v" class="container ">
-                <div id="idXejXSC" class="row ">
-                    <div id="idNbMMen" class="col-lg-12 text-center ">
-                        <div id="idPRXOn8" class="section-title ">
-                            <h2 id="id2Dn7Eb">紫韵宣讲
-                                
-                                  
-                                
-                            </h2>
+
+            <a href="#" data-toggle="modal" data-target="#Video-1">
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <div style="height: 600px;" class="team-item ">
+                            <div class="team-image ">
+                                <img class="img-responsive " src="images/图片7.jpg" alt="author" />
+                            </div>
+                            <div class="team-text ">
+                                <h3>宣讲单位：线上腾讯会议
+                                </h3>
+                                <div class="team-position ">紫韵宣讲家：王柏慧、徐欣一
+                                </div>
+                                <p>“紫韵・星火”实践团举办“七秩风雨，与国同行”线上宣讲会<br><br>
+                                    队员徐欣一和王柏慧针对大连理工大学的建校历史、校园文化建设、思想教育建设，以及基础设施建设进行了深入的解读，通过生动的叙述和真实感人的故事，拉近了大众与大连理工大学的距离。
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+            </a>
+            <a href="#" data-toggle="modal" data-target="#Video-2">
+                <div class="col-md-4 ">
+                    <div style="height: 600px;" class="team-item ">
+                        <div class="team-image ">
+                            <img class="img-responsive " src="images/图片5.jpg" alt="author" />
+                        </div>
+                        <div class="team-text ">
+                            <h3>宣讲单位：福建省漳州市常山北区小学
+                            </h3>
+                            <div class="team-position ">紫韵宣讲家：赵成硕 王泽凯 焦子健 杨泽鹏
+                            </div>
+                            <p>赵成硕同学进行《学习贯彻党的二十大精神》团课宣讲，介绍了党的历史事件，二十大的主题、中心任务、战略安排、重大原则、本质要求等。
+                                王泽凯同学进行的《党在我心中，永远跟党走》主题汇报，介绍了二十大精神关键词，生动演绎了新时代、新征程，党的宏伟蓝图。
+                                焦子健和杨泽鹏同学进行的《党的十年》相声演绎，生动形象的描绘出这十年跟随党的领导，人民的生活质量发生了巨变。
+                                <br><br>
+                            </p>
                         </div>
                     </div>
                 </div>
-               <a href="http://storage.live.com/items/8ACFA6230445AA76!1820:/1-大工红色历史.mp4?authkey=!AOin63nDaVCttug">
-
-              
-                    <div id="idvDFOMv" class="row ">
-                        <div class="col-md-4 ">
-                            <div style="height: 600px;"  class="team-item ">
-                                <div id="idZHAiQe" class="team-image ">
-                                    <img id="idNpH7j2" class="img-responsive " src="images/图片7.jpg" alt="author" />
-                                </div>
-                                <div id="idP8iKJp" class="team-text ">
-                                    <h3 >宣讲单位：线上腾讯会议
-                                    </h3>
-                                    <div  class="team-position ">紫韵宣讲家：王柏慧、徐欣一
-                                    </div>
-                                    <p >“紫韵・星火”实践团举办“七秩风雨，与国同行”线上宣讲会<br><br>
-                                        队员徐欣一和王柏慧针对大连理工大学的建校历史、校园文化建设、思想教育建设，以及基础设施建设进行了深入的解读，通过生动的叙述和真实感人的故事，拉近了大众与大连理工大学的距离。
-                                        
-                                    </p>
-                                </div>
-                            </div>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#Video-3">
+                <div class="col-md-4 ">
+                    <div style="height: 600px;" class="team-item ">
+                        <div class="team-image ">
+                            <img class="img-responsive " src="images/图片4.jpg" alt="author" />
                         </div>
-
-                    </a>
-                       <a href="http://storage.live.com/items/8ACFA6230445AA76!1817:/2-二十大宣讲.mp4?authkey=!AOin63nDaVCttug">
-                        <div  class="col-md-4 ">
-                            <div style="height: 600px;"  class="team-item ">
-                                <div id="idgvCwpm" class="team-image ">
-                                    <img id="idsZfHAT" class="img-responsive " src="images/图片5.jpg" alt="author" />
-                                </div>
-                                <div id="idVphdhx" class="team-text ">
-                                    <h3 id="idattMVZ">宣讲单位：福建省漳州市常山北区小学
-                                    </h3>
-                                    <div id="idcSMZTd" class="team-position ">紫韵宣讲家：赵成硕 王泽凯 焦子健 杨泽鹏
-                                    </div>
-                                    <p id="idiN2bS3">赵成硕同学进行《学习贯彻党的二十大精神》团课宣讲，介绍了党的历史事件，二十大的主题、中心任务、战略安排、重大原则、本质要求等。
-                                        王泽凯同学进行的《党在我心中，永远跟党走》主题汇报，介绍了二十大精神关键词，生动演绎了新时代、新征程，党的宏伟蓝图。
-                                        焦子健和杨泽鹏同学进行的《党的十年》相声演绎，生动形象的描绘出这十年跟随党的领导，人民的生活质量发生了巨变。
-                                        <br><br>
-                                    </p>
-                                </div>
+                        <div class="team-text ">
+                            <h3>宣讲单位：沈阳市康家山监狱
+                            </h3>
+                            <div class="team-position ">紫韵宣讲家：杨泽鹏
                             </div>
+                            <p id="idbzJVK2">
+                                宣讲会上，与会者对东北地区存在的问题进行了深入剖析，并概括了东北振兴新的任务。在东北振兴的起源上，与会者一致认为，要加快东部地区的发展，率先实现全面小康和现代化，东北地区等老工业基地加快调整。此外，要注重培养和吸引高端人才整体创新能力和竞争力并呼吁各界共同参与，汇聚智慧和力量，促进东北地区经济的快速发展。相信在全社会的共同努力下，东北地区必将焕发新的活力，成为中国经济增长的重要引擎之一。
+                            </p>
                         </div>
-                    </a>
-                    <div  class="col-md-4 ">
-                            <div style="height: 600px;"  class="team-item ">
-                                <div id="idG1IkF6" class="team-image ">
-                                    <a href="http://storage.live.com/items/8ACFA6230445AA76!1836:/4-沈阳线下宣讲会.mp4?authkey=!AOin63nDaVCttug"><img id="id6kAv2H" class="img-responsive " src="images/图片4.jpg" alt="author" /></a>
-                                </div>
-                                <div id="id4SVFVk" class="team-text ">
-                                    <h3 id="idfsGRmO">宣讲单位：沈阳市康家山监狱
-                                    </h3>
-                                    <div id="idHBi7CB" class="team-position ">紫韵宣讲家：杨泽鹏
-                                    </div>
-                                    <p id="idbzJVK2">
-                                        宣讲会上，与会者对东北地区存在的问题进行了深入剖析，并概括了东北振兴新的任务。在东北振兴的起源上，与会者一致认为，要加快东部地区的发展，率先实现全面小康和现代化，东北地区等老工业基地加快调整。此外，要注重培养和吸引高端人才整体创新能力和竞争力并呼吁各界共同参与，汇聚智慧和力量，促进东北地区经济的快速发展。相信在全社会的共同努力下，东北地区必将焕发新的活力，成为中国经济增长的重要引擎之一。
-                                        
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
                 </div>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#Video-4">
                 <div id="idvDFOMv" class="row ">
-                    <div  class="col-md-4 ">
-                        <div style="height: 500px;"  class="team-item ">
+                    <div class="col-md-4 ">
+                        <div style="height: 500px;" class="team-item ">
                             <div id="idZHAiQe" class="team-image ">
                                 <img id="idNpH7j2" class="img-responsive " src="images/图片1.jpg" alt="author" />
                             </div>
                             <div id="idP8iKJp" class="team-text ">
-                                <h3 >紫韵宣讲家：邹志鹏
+                                <h3>紫韵宣讲家：邹志鹏
                                 </h3>
-                                <div  class="team-position ">宣讲单位：辽宁省建平县万寿街道平安地村
+                                <div class="team-position ">宣讲单位：辽宁省建平县万寿街道平安地村
                                 </div>
                                 <p>红色宣讲，旨在通过讲述红色历史，传承红色基因，激发青年一代的爱国情怀和奋斗精神。
                                     今天，我们来到了辽宁省建平县万寿街道平安地村，结合当地历史，开展了富有教育意义的宣讲活动。
                             </div>
                         </div>
                     </div>
-                    <div  class="col-md-4 ">
-                        <div style="height: 500px;" class="team-item ">
-                            <div id="idgvCwpm" class="team-image ">
-                                <img id="idsZfHAT" class="img-responsive " src="images/图片2.jpg" alt="author" />
+            </a>
+            <a href="#" data-toggle="modal" data-target="#Video-5">
+                <div class="col-md-4 ">
+                    <div style="height: 500px;" class="team-item ">
+                        <div id="idgvCwpm" class="team-image ">
+                            <img id="idsZfHAT" class="img-responsive " src="images/图片2.jpg" alt="author" />
+                        </div>
+                        <div id="idVphdhx" class="team-text ">
+                            <h3 id="idattMVZ">宣讲单位：宁夏回族自治区银川市兴庆区掌政镇五渡桥村
+                            </h3>
+                            <div id="idcSMZTd" class="team-position ">紫韵宣讲家：徐鲁宁
                             </div>
-                            <div id="idVphdhx" class="team-text ">
-                                <h3 id="idattMVZ">宣讲单位：宁夏回族自治区银川市兴庆区掌政镇五渡桥村
-                                </h3>
-                                <div id="idcSMZTd" class="team-position ">紫韵宣讲家：徐鲁宁
-                                </div>
-                                <p id="idiN2bS3">实践团追寻习近平总书记于宁夏考察的足迹，围绕“习近平的山海情”“习近平与‘生命之源’”“习近平与‘缚黄沙’”三个部分带领党员们学习了习近平在宁夏关于闽宁协作、吃水用水、防沙固沙等方面重要精神指示。
-                                </p>
-                            </div>
+                            <p id="idiN2bS3">
+                                实践团追寻习近平总书记于宁夏考察的足迹，围绕“习近平的山海情”“习近平与‘生命之源’”“习近平与‘缚黄沙’”三个部分带领党员们学习了习近平在宁夏关于闽宁协作、吃水用水、防沙固沙等方面重要精神指示。
+                            </p>
                         </div>
                     </div>
-                    
-                    <div  class="col-md-4 ">
-                        <div style="height: 500px;" class="team-item ">
-                            <div id="idG1IkF6" class="team-image ">
-                                <img id="id6kAv2H" class="img-responsive " src="images/图片3.jpg" alt="author" />
+                </div>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#Video-6">
+                <div class="col-md-4 ">
+                    <div style="height: 500px;" class="team-item ">
+                        <div id="idG1IkF6" class="team-image ">
+                            <img id="id6kAv2H" class="img-responsive " src="images/图片3.jpg" alt="author" />
+                        </div>
+                        <div id="id4SVFVk" class="team-text ">
+                            <h3 id="idfsGRmO">宣讲单位：河南省平顶山市宝丰县农业机械技术中心
+                            </h3>
+                            <div id="idHBi7CB" class="team-position ">紫韵宣讲家：杨如琳 杨煜培 刘佳楠
                             </div>
-                            <div id="id4SVFVk" class="team-text ">
-                                <h3 id="idfsGRmO">宣讲单位：河南省平顶山市宝丰县农业机械技术中心
-                                </h3>
-                                <div id="idHBi7CB" class="team-position ">紫韵宣讲家：杨如琳 杨煜培 刘佳楠
-                                </div>
-                               <p>8月5日，大连理工大学“紫韵・星火”社会实践团前往宝丰县农业机械技术中心开展了一次以“追寻习近平的足迹”为主题的红色宣讲。
-                                </p>
-                            </div>
+                            <p>8月5日，大连理工大学“紫韵・星火”社会实践团前往宝丰县农业机械技术中心开展了一次以“追寻习近平的足迹”为主题的红色宣讲。
+                            </p>
                         </div>
                     </div>
-                
-            </div>
-            </div>
-<!-- 
+                </div>
+            </a>
+        </div>
+        <!-- 
         </section>
         <section id="contact">
             <div id="idR3ET73" class="container ">
@@ -619,37 +833,40 @@
                 <i id="idIOB8BV" class="fa fa-angle-up ">
                 </i>
             </a>
-        </p>  
-         
-		<footer id="idWGzEMq">
+        </p>
+
+        <footer id="idWGzEMq">
             <div id="idn4nS9l" class="container text-center " style="width: max-content; height: 0px;">
-                <p style="font-size: 16px; color: orangered;">
-                    紫韵·星火 社会实践团
-                </p>
+                <a href="https://mp.weixin.qq.com/s?__biz=MzkwNjUyMzcyMg==&mid=2247484021&idx=1&sn=69dfb310ad795bb175522af76541a52c&chksm=c0e66750f791ee46d2a1020de829cd219f147ab0f20550257cacbaa273b5b7c04b18716999e7&mpshare=1&srcid=0722K54uqzXEPmGU8BG0Th2r&sharer_sharetime=1690020300789&sharer_shareid=b76eec5dfdf37f1b29684caaf9ec68a7&from=groupmessage&scene=1&subscene=10000&sessionid=1693908469&clicktime=1693910533&enterid=1693910533&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6843331-zh_CN-zip&fasttmpl_flag=0&realreporttime=1693910533181&devicetype=android-30&version=28002862&nettype=cmnet&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQjyZpg%2BojR67kq1waw41b3hLwAQIE97dBBAEAAAAAANJaIWv9bp4AAAAOpnltbLcz9gKNyK89dVj0xFPZHB%2FQHWZzmJtP3zfFNZyjCDydHRekDKFNinGMzbxXTpCi61x80QUpHK%2Fc%2FYzxeXkIM0ask1ADx6X4%2BqGcNDE8lKzJTZE7ae95hiGyLHqAuYgNjnKmlNd7Dz4fUiPgyrdkUnm0jVobeNdPhFYyUZHMVPM9EK9feDPvnokt0xrApgWrKM0YoguBd4SRuITTCSTdn7O7aD95%2FnRYavs0ehvrLR%2Fm%2BypfzlNJLIBE5L5eNkoy0Wvor%2BSOdgULGa3agQKfyzAMABGyZg%3D%3D&pass_ticket=NFz2JZVa6O12dcKHjKh0LwNICBVin86UCbU%2FgSgfwbFG5pwYPyHsILMbMP%2FUGTpP&wx_header=3">
+                    <p style="font-size: 16px; color: orangered;">
+                        紫韵·星火 社会实践团
+                    </p>
+                </a>
             </div>
-        </footer> 
+        </footer>
         <div id="Modal-1" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
-            <div id="idfe9h5B" class="modal-dialog " role="document">
-                <div id="idDnIsze" class="modal-content ">
-                    <div id="idsXKs14" class="modal-header ">
-                        <button id="idlzbcxn" class="close " type="button" data-dismiss="modal" aria-label="Close">
-                            <span id="id6RF3uP" aria-hidden="true">×
+            <div class="modal-dialog " role="document">
+                <div  class="modal-content ">
+                    <div  class="modal-header ">
+                        <button  class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×
                             </span>
                         </button>
                         <h4 id="Modal-label-1" class="modal-title ">河南省 安阳市
                         </h4>
                     </div>
-                    <div  class="modal-body " >
-                        
-                        
-                            <img   class="img-responsive" src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZzMwcVNtdDB3ajN1d0VOP2U9MWhnS0Fu.jpg" controls="controls" ></video>
-                            
-                        
-                    
-                        <div  class="modal-works ">
-                            <span >紫韵
+                    <div class="modal-body ">
+
+
+                        <img alt="" class="img-responsive"
+                            src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZzMwcVNtdDB3ajN1d0VOP2U9MWhnS0Fu.jpg">
+
+
+
+                        <div class="modal-works ">
+                            <span>紫韵
                             </span>
-                            <span >星火
+                            <span>星火
                             </span>
                         </div>
                         <p>星火讲解人：刘佳楠，杨煜培，杨如琳
@@ -657,77 +874,81 @@
                         <p>红色展馆：红旗渠纪念碑 文峰塔 中国汉字馆</p>
                         <p>2022年29期
                         </p>
-                        
-                    <p>
+
+                        <p>
                             红旗渠门口：
-                        </p>   
-                    <p>  
-                            紫芝韵芳华，星火以燎原。我们是大连理工大学国际信息与软件学院“紫韵 星火”社会实践团。重走习近平总书记的考察路线，我们今天来到了河南省安阳市林州市红旗渠风景区。现在我们所处的位置是风景区的正门，那么下面就跟我们一起走进红旗渠，感受“人工天河”的震撼，领悟中国共产党人精神谱系之 红旗渠精神。
-                        </p>    
-                    <p> 
+                        </p>
+                        <p>
+                            紫芝韵芳华，星火以燎原。我们是大连理工大学国际信息与软件学院“紫韵
+                            星火”社会实践团。重走习近平总书记的考察路线，我们今天来到了河南省安阳市林州市红旗渠风景区。现在我们所处的位置是风景区的正门，那么下面就跟我们一起走进红旗渠，感受“人工天河”的震撼，领悟中国共产党人精神谱系之
+                            红旗渠精神。
+                        </p>
+                        <p>
                             红旗渠纪念馆：
                             红旗渠纪念馆门口
                             现在我们所处的位置是红旗渠纪念馆。上世纪60年代，在党的领导下，林县在地势险恶的太行山腰修建红旗渠，引漳河水入林州，解决了50多万人口的饮水问题。这一震撼人心的修建场景被称为“十万大军战太行”。
                         </p>
-                    <p>       
+                        <p>
                             馆内位置1：
                             “一部林县志，满卷荒旱史”“水缺贵如油，十年九不收”。这是旧林县的真实写照。据史料记载，从1442年到1943年，500年间就有100多个年份出现大旱灾，其中大旱绝收30多次。据统计，在红旗渠修建之前，全县550个行政村中，有307个村人畜吃水困难。
                             解决林县人民吃水用水难题迫在眉睫。
-                        </p> 
-                    <p>     
+                        </p>
+                        <p>
                             馆内位置2：
                             1960年2月，太行山上响起开山炮声，拉开林县人民“十万大军战太行”序幕，世世代代盼水的林县人民开启了一场艰苦而伟大的持久战。
                             　　面对红旗渠修建中的种种艰难，林县人民咬紧牙关，“既然愚公能移山，我们修渠有何难，立下愚公移山志，决心劈开太行山”。历时十年，他们真正做到了“誓把山河重安排”，引晋水入豫，劈山凿壁，林县人民世代盼水的愿景终于得以实现。
                         </p>
-                    <p>       
+                        <p>
                             馆内位置3：
                             “一渠绕群山，精神动天下。”在艰苦卓绝的修渠征程中，林县共有81位优秀儿女献出宝贵生命，其中25岁以下28人，年龄最小的仅17岁。红旗渠总设计师吴祖太是第一个为红旗渠献身的人，也是牺牲的英烈中唯一的外乡人。在修建红旗渠期间，他的母亲和妻子先后离世，他强忍悲痛，继续奋战，直至献出年仅27岁的宝贵生命。
                         </p>
-                    <p>       
+                        <p>
                             馆内场景4：
-                            “问渠哪得清如许？为有源头活水来。” 红旗渠渠水之清，其源头活水是61年前，在“誓把山河重安排”的壮志豪言中，红旗渠的修筑谱写了一曲感天动地的奋斗壮歌，孕育了“自力更生、艰苦创业、团结协作、无私奉献”的红旗渠精神。
+                            “问渠哪得清如许？为有源头活水来。”
+                            红旗渠渠水之清，其源头活水是61年前，在“誓把山河重安排”的壮志豪言中，红旗渠的修筑谱写了一曲感天动地的奋斗壮歌，孕育了“自力更生、艰苦创业、团结协作、无私奉献”的红旗渠精神。
                         </p>
-                    <p>       
+                        <p>
                             红色板子有习近平的话
                             2022年10月28日上午，党的二十大闭幕不久，习近平总书记在河南安阳林州市红旗渠纪念馆考察时指出“要用红旗渠精神教育人民，特别是广大青少年，社会主义是拼出来、干出来、拿命换来的，不仅过去如此，新时代也是如此”。
                         </p>
-                    <p>       
-                            
-                            
+                        <p>
+
+
                             青年洞（刻在山崖上）
                         </p>
-                    <p>       
+                        <p>
                             青年洞位置1：
                             红旗渠修建过程中，300名青年组成突击队，经过1年5个月的奋战，将地势险要、石质坚硬的岩壁凿通，这个输水隧洞被命名为青年洞。这里崖壁陡峭，是整个红旗渠最困难的艰险工段之一。习近平总书记在青年洞考察时强调“年轻一代要继承和发扬吃苦耐劳、自力更生、艰苦奋斗的精神，摒弃骄娇二气，像我们的父辈一样，把青春热血镌刻在历史的丰碑上。”
                         </p>
-                    <p>       
+                        <p>
                             青年洞位置2：
                             今天，我们在“青年洞”前聆听红旗渠精神的时代回响。
                             这是青年建设者豪情壮志、奋斗青春的见证，也将给予新时代青年直面挑战的勇气和动力。让我们肩负起历史赋予的责任，自强不已，奋斗不息，在实现中华民族复兴的伟大实践中成就新的青春辉煌。
-                            
+
                         </p>
                     </div>
-                    <div  class="modal-footer ">
-                        <button  class="btn btn-default " type="button" data-dismiss="modal">Close
+                    <div class="modal-footer ">
+                        <button class="btn btn-default " type="button" data-dismiss="modal">Close
                         </button>
                     </div>
                 </div>
             </div>
         </div>
         <div id="Modal-2" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Modal-label-2">
-            <div  class="modal-dialog " role="document">
-                <div  class="modal-content ">
-                    <div  class="modal-header ">
-                        <button  class="close " type="button" data-dismiss="modal" aria-label="Close">
-                            <span  aria-hidden="true">×
+            <div class="modal-dialog " role="document">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×
                             </span>
                         </button>
                         <h4 id="Modal-label-2" class="modal-title ">辽宁省 沈阳市
                         </h4>
                     </div>
-                    <div  class="modal-body ">
-                        <img   class="img-responsive" src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZ09CRW9IZUFLbzBRY2l2P2U9QU1oV1F6.jpg" controls="controls" >
-                        <div  class="modal-works ">
+                    <div class="modal-body ">
+                        <img alt="" class="img-responsive"
+                            src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZ09CRW9IZUFLbzBRY2l2P2U9QU1oV1F6.jpg">
+                        <div class="modal-works ">
                             <span>紫韵
                             </span>
                             <span>星火
@@ -738,27 +959,27 @@
                         <p>红色展馆：九一八博物馆故宫 盛京大剧院 市府恒隆 北陵</p>
                         <p>
                             大家好，我是紫韵星火，必定有我实践团的杨泽鹏，今天我们来到的是坐落于辽宁省沈阳市的九一八历史博物馆。
-1931年9月18日，日本关东军在沈阳蓄意制造“柳条湖事件”，发动了武装侵华的9·18事变。中国人民奋起抵抗，开始了长达14年的抗日战争。
-9·18事变是中国人民抗日战争的起点。
-</p>
-<p>
-9·18纪念石碑记录着这个历史性的一刻，它成立体式台历状。整个建筑高18米、宽30米、厚11米。上面的坑洼代表千疮百孔的弹痕。
-沈阳九一八纪念馆是国内外迄今为止全面反映九一八事变历史的博物馆。 </p>
-<p>
-勿忘国耻警世钟在每年的9月18日都会敲响，届时全国会有上百个城市同时拉响防空警报，以示对在抗日战争中牺牲的英烈的怀念，同时警醒国人勿忘历史。
-</p>
-<p>
-现在我们进入到博物馆内，重新走过这段中华民族风雨飘摇的岁月 </p>
-<p>
-纪念馆里很多注释都是中英日三国文字。博物馆现有9180平方米的展览面积，内部共分三层，设有8个展厅。 </p>
-<p>
-1931年9月18日，日本关东军经过阴谋策划，自行炸毁沈阳柳条湖附近南满铁路的一段路轨，反诬中国军队所为，随即对东北军驻地北大营发起选攻，制造了震憾中外的九一八事变。日军几乎未受到抵抗便占领沈阳全城，继而迅速占领辽宁、吉林、黑龙江三省。这就是震惊中外的九一八事变。从此，东北大好河山惨遭践踏，东北人民陷于水深火热之中。
-九一八事变，是日本军国主义者长期推行对华侵路扩张政策的必然结果，是中国人民抗日战争的起点，揭开了世界反法西斯战争的序幕。在严重的民族危急关头，中国共产党率先高攀抗日族帜，号召全国人民进行武装反抗，直接领导和推动了东北人民的抗日斗争，成为东北军民坚持抗战的中流砥柱。在由局部抗战到全民族抗战进程中，以中国共产党直接领导的东北抗日联军为代表的东北军民为了民族独立、为了和平正义，在白山黑水之间同日本侵路者进行了长达14年的殊死斗争。
-</p>
-<p>
-“九一八”是烙在中华民族心上的一道伤疤，那是一段悲惨屈辱的苦难历史，也是一部觉醒奋起的悲壮史诗。他点燃了日本长达14年的侵华战火。在日军铁蹄肆虐下，中华儿女壮怀“我们万众一心，冒着敌人的炮火前进”的满腔热血，“四万万人齐蹈厉”“誓死不当亡国奴”，与日本侵略者进行艰苦卓绝的斗争，最终取得了近代以来中国反抗外敌入侵的第一次完全胜利。岁月的落英早已覆盖战争的遗迹，发展的潮流一点点清洗着历史的伤痛，但90年后的今天我们仍应牢记由鲜血和生命铸就的伟大历史，捍卫来之不易的和平及殊为珍贵的民族尊严。
-</p>
-                        
+                            1931年9月18日，日本关东军在沈阳蓄意制造“柳条湖事件”，发动了武装侵华的9·18事变。中国人民奋起抵抗，开始了长达14年的抗日战争。
+                            9·18事变是中国人民抗日战争的起点。
+                        </p>
+                        <p>
+                            9·18纪念石碑记录着这个历史性的一刻，它成立体式台历状。整个建筑高18米、宽30米、厚11米。上面的坑洼代表千疮百孔的弹痕。
+                            沈阳九一八纪念馆是国内外迄今为止全面反映九一八事变历史的博物馆。 </p>
+                        <p>
+                            勿忘国耻警世钟在每年的9月18日都会敲响，届时全国会有上百个城市同时拉响防空警报，以示对在抗日战争中牺牲的英烈的怀念，同时警醒国人勿忘历史。
+                        </p>
+                        <p>
+                            现在我们进入到博物馆内，重新走过这段中华民族风雨飘摇的岁月 </p>
+                        <p>
+                            纪念馆里很多注释都是中英日三国文字。博物馆现有9180平方米的展览面积，内部共分三层，设有8个展厅。 </p>
+                        <p>
+                            1931年9月18日，日本关东军经过阴谋策划，自行炸毁沈阳柳条湖附近南满铁路的一段路轨，反诬中国军队所为，随即对东北军驻地北大营发起选攻，制造了震憾中外的九一八事变。日军几乎未受到抵抗便占领沈阳全城，继而迅速占领辽宁、吉林、黑龙江三省。这就是震惊中外的九一八事变。从此，东北大好河山惨遭践踏，东北人民陷于水深火热之中。
+                            九一八事变，是日本军国主义者长期推行对华侵路扩张政策的必然结果，是中国人民抗日战争的起点，揭开了世界反法西斯战争的序幕。在严重的民族危急关头，中国共产党率先高攀抗日族帜，号召全国人民进行武装反抗，直接领导和推动了东北人民的抗日斗争，成为东北军民坚持抗战的中流砥柱。在由局部抗战到全民族抗战进程中，以中国共产党直接领导的东北抗日联军为代表的东北军民为了民族独立、为了和平正义，在白山黑水之间同日本侵路者进行了长达14年的殊死斗争。
+                        </p>
+                        <p>
+                            “九一八”是烙在中华民族心上的一道伤疤，那是一段悲惨屈辱的苦难历史，也是一部觉醒奋起的悲壮史诗。他点燃了日本长达14年的侵华战火。在日军铁蹄肆虐下，中华儿女壮怀“我们万众一心，冒着敌人的炮火前进”的满腔热血，“四万万人齐蹈厉”“誓死不当亡国奴”，与日本侵略者进行艰苦卓绝的斗争，最终取得了近代以来中国反抗外敌入侵的第一次完全胜利。岁月的落英早已覆盖战争的遗迹，发展的潮流一点点清洗着历史的伤痛，但90年后的今天我们仍应牢记由鲜血和生命铸就的伟大历史，捍卫来之不易的和平及殊为珍贵的民族尊严。
+                        </p>
+
                     </div>
                     <div id="idqPwLVr" class="modal-footer ">
                         <button id="idWSQ9H1" class="btn btn-default " type="button" data-dismiss="modal">Close
@@ -779,7 +1000,8 @@
                         </h4>
                     </div>
                     <div id="idegUqtH" class="modal-body ">
-                        <img   class="img-responsive" src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqaEdFY0RGWUNhNmlvWUlfP2U9aE51eVR3.jpg" controls="controls" >
+                        <img alt="" class="img-responsive"
+                            src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqaEdFY0RGWUNhNmlvWUlfP2U9aE51eVR3.jpg">
                         <div id="idUoJVkk" class="modal-works ">
                             <span id="idabVLGi">紫韵
                             </span>
@@ -792,21 +1014,21 @@
                         <p>
                             寻觅革命足迹，传承红色基因。
                         </p>
-                    <p>   
-这里是抗美援朝战争时期中国人民志愿军纪念馆。抗美援朝，又称抗美援朝运动或抗美援朝战争，是20世纪50年代初爆发的朝鲜战争的一部分，仅指中国人民志愿军参战的阶段，也包括中国人民支援朝鲜人民军，抗击美国侵略的群众性运动。
-大家现在看到的这幅名为《中国人民志愿军跨过鸭绿江》的照片，是时任中国人民志愿军第64军政治部摄影干事黎民拍摄的。它与《中国人民志愿军战歌》一起，已成为伟大的抗美援朝战争标志。那么，这幅全景式的珍贵历史照片是如何拍摄的？照片背后有着怎样鲜为人知的故事？
-1951年2月中旬，黎民所在的部队奉命开赴朝鲜战场，准备参加志愿军总部组织的第五次战役。那年冬天，天气格外冷，到处白雪皑皑。
-</p>
-<p>
-当时，黎民站在岸边，为过江部队做宣传工作。很多志愿军看到黎民脖子上挂着照相机，便围过来说:“黎民同志，给我们拍张照片吧！不管将来我们能否回来，都是个纪念。”当时按规定是不许给个人随便照相的，但是黎民想到这些战友们即将奔赴战场，他就破例一一为他们照了相。
-</p>
-<p>
-不知不觉到了下午，天气变得晴朗起来，积雪在阳光下泛着银辉。一会儿，只见当年由邓小平、张云逸领导的百色起义红军团开始踏上便桥，列队过江。望着这支戎装严整的队伍，他猛然来了灵感，想抓拍一幅全景式过江照片，这样才能为历史留下一个不朽的见证。于是，他将镜头稳稳地对准这支如巨龙般蜿蜒腾跃的过江队伍，就在那“龙头”刚刚探入朝鲜新义州市，而“龙尾”尚在安东土地上逶迤的时候，黎民庄严而又激动地按动了快门。
-部队过江后，黎民把这幅照片寄往解放军画报社，后来，这幅照片同《中国人民志愿军战歌》，同时发表在1951年第4期《解放军画报》的扉页上。照片刊登后，在全国引起了很大轰动，整个画面开阔壮观、气势恢宏，展示了中国人民志愿军不怕牺牲、一往无前的国际主义和爱国主义精神风貌。
-</p>
-<p>
-青年朋友们，在新的历史条件下，我们要弘扬伟大的抗美援朝精神，安不忘危、存不忘亡、治不忘乱，接过历史的接力棒，以青春之我，报青春华章。
-</p>
+                        <p>
+                            这里是抗美援朝战争时期中国人民志愿军纪念馆。抗美援朝，又称抗美援朝运动或抗美援朝战争，是20世纪50年代初爆发的朝鲜战争的一部分，仅指中国人民志愿军参战的阶段，也包括中国人民支援朝鲜人民军，抗击美国侵略的群众性运动。
+                            大家现在看到的这幅名为《中国人民志愿军跨过鸭绿江》的照片，是时任中国人民志愿军第64军政治部摄影干事黎民拍摄的。它与《中国人民志愿军战歌》一起，已成为伟大的抗美援朝战争标志。那么，这幅全景式的珍贵历史照片是如何拍摄的？照片背后有着怎样鲜为人知的故事？
+                            1951年2月中旬，黎民所在的部队奉命开赴朝鲜战场，准备参加志愿军总部组织的第五次战役。那年冬天，天气格外冷，到处白雪皑皑。
+                        </p>
+                        <p>
+                            当时，黎民站在岸边，为过江部队做宣传工作。很多志愿军看到黎民脖子上挂着照相机，便围过来说:“黎民同志，给我们拍张照片吧！不管将来我们能否回来，都是个纪念。”当时按规定是不许给个人随便照相的，但是黎民想到这些战友们即将奔赴战场，他就破例一一为他们照了相。
+                        </p>
+                        <p>
+                            不知不觉到了下午，天气变得晴朗起来，积雪在阳光下泛着银辉。一会儿，只见当年由邓小平、张云逸领导的百色起义红军团开始踏上便桥，列队过江。望着这支戎装严整的队伍，他猛然来了灵感，想抓拍一幅全景式过江照片，这样才能为历史留下一个不朽的见证。于是，他将镜头稳稳地对准这支如巨龙般蜿蜒腾跃的过江队伍，就在那“龙头”刚刚探入朝鲜新义州市，而“龙尾”尚在安东土地上逶迤的时候，黎民庄严而又激动地按动了快门。
+                            部队过江后，黎民把这幅照片寄往解放军画报社，后来，这幅照片同《中国人民志愿军战歌》，同时发表在1951年第4期《解放军画报》的扉页上。照片刊登后，在全国引起了很大轰动，整个画面开阔壮观、气势恢宏，展示了中国人民志愿军不怕牺牲、一往无前的国际主义和爱国主义精神风貌。
+                        </p>
+                        <p>
+                            青年朋友们，在新的历史条件下，我们要弘扬伟大的抗美援朝精神，安不忘危、存不忘亡、治不忘乱，接过历史的接力棒，以青春之我，报青春华章。
+                        </p>
                         </p>
                     </div>
                     <div id="idcwpXuf" class="modal-footer ">
@@ -819,18 +1041,19 @@
         <div id="Modal-4" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Modal-label-4">
             <div id="idvEVOHc" class="modal-dialog " role="document">
                 <div id="idehxviO" class="modal-content ">
-                    <div  class="modal-header ">
-                        <button  class="close " type="button" data-dismiss="modal" aria-label="Close">
-                            <span  aria-hidden="true">×
+                    <div class="modal-header ">
+                        <button class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×
                             </span>
                         </button>
                         <h4 id="Modal-label-4" class="modal-title ">湖南省 长沙市
                         </h4>
                     </div>
                     <div id="idcs1kmU" class="modal-body ">
-                        <img   class="img-responsive" src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZzh1OVFJLWw2emRnREtfP2U9SmZjRDdr.jpg" controls="controls" >
-                        <div  class="modal-works ">
-                            <span >紫韵
+                        <img alt="" class="img-responsive"
+                            src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqZzh1OVFJLWw2emRnREtfP2U9SmZjRDdr.jpg">
+                        <div class="modal-works ">
+                            <span>紫韵
                             </span>
                             <span>星火
                             </span>
@@ -842,25 +1065,40 @@
                         <p>
                             1.我是大连理工大学国际信息与软件学院紫韵星火实践团的成员彭睿霖。
                             中国共产党长沙历史馆占地面积约4万平方米，建筑面积1.02万平方米，展陈面积6700平方米。馆内有“长岛人歌动地诗”——中国共产党长沙历史陈列、“湘区丰碑”专题陈列、毛泽东诗词对联书法艺术碑廊等景点，全面系统地展示了中国共产党在长沙波澜壮阔的革命岁月和领导长沙取得繁荣发展的伟大历史成就。
-                        </p>  
-                        <p>  
+                        </p>
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1864:/长沙中共历史馆1.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+                        <p>
                             2.踏入这座新建成的红色地标，参观这些承载百年党史的图片、文物实物，你会发现，其中有不少载入史册的长沙印记，更有不少熠熠生辉的湖南元素。
-                        </p>  
-                        <p>    
+                        </p>
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1862:/长沙中共历史馆2.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+                        <p>
                             3.为纪念毛泽东同志诞辰一百周年，充分发挥中共湘区委旧址这一文物保护单位的社会效益，经湖南省委、省政府和长沙市市委、市政府批准，由长沙市博物馆兴建《毛泽东诗词对联书法艺术碑廊》。
-                        </p>    
-                        <p>  
+                        </p>
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1863:/长沙中共历史馆3.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+                        <p>
                             4.随着十月革命一声炮响，湖南人的奋斗精神在以毛泽东为代表的“一班可爱可敬的青年身上复活了”。他们以“改造中国与世界”为已任，重新思考中国的前途、命运;开展新文化运动，号召“民众大联合”;成立俄罗斯研究会，传播马克思主义;组织赴法勤工俭学和赴俄罗斯、南洋留学，学习各国先进思想和革命经验。新民学会发建党先声，毛泽东和何叔衡在长沙成立中国共产党早期组织，参加党的一大回到长沙后，掀起以长沙为中心的第一次湖南工人运动高潮。
                             长沙，为中国共产党的创建在思想上、组织上、理论上和实践上作出了巨大的贡献。
-                            
-                        </p> 
-                        <p>  
+
+                        </p>
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1866:/长沙中共历史馆4.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+                        <p>
                             5.1949年新中国成立至1978年党的十一届三中全会召开，中国共产党领导全国人民进行社会主义革命和建设并取得巨大成就，新长沙与新中国同步成长。
                             长沙和平解放后，长沙市委立即领导人民接管建政，进行社会民主改革，巩固新生的人民政权。完成了对农业、手工业、资本主义工商业的社会主义改造，建立了社会主义基本经济制度。同时，以极大的努力迅速恢复和发展国民经济，政治、经济、文化等各项事业取得显著成效，并积累了宝贵的建设经验。
                             历经了跌宕起伏的如歌岁月，长沙社会主义建设事业在激情进发中曲折前进，各级党组织在艰辛探索中砥砺前行。
-                        </p>       
-                        
-                       
+                        </p>
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1865:/长沙中共历史馆5.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+
+
                     </div>
                     <div id="idizC2Qv" class="modal-footer ">
                         <button id="idxeGUDU" class="btn btn-default " type="button" data-dismiss="modal">Close
@@ -880,7 +1118,8 @@
                         <h4 id="Modal-label-5" class="modal-title ">天津市
                     </div>
                     <div id="idLcp3km" class="modal-body ">
-                        <img   class="img-responsive" src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqaGpDenZWcER0VklUUHFTP2U9dDV0QzFJ.jpg" controls="controls" >
+                        <img alt="" class="img-responsive"
+                            src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2kvcyFBbmFxUlFRanBzLUtqaGpDenZWcER0VklUUHFTP2U9dDV0QzFJ.jpg">
                         <div id="idS3cIze" class="modal-works ">
                             <span id="idDW57Wj">紫韵
                             </span>
@@ -889,17 +1128,17 @@
                         </div>
                         <p>星火讲解人:陈佳怡
                         </p>
-                        
+
                         <p>他是人民敬爱的周总理，他是中国的伟大战士。他风度翩翩，魅力难挡；他鞠躬尽瘁，为人民横眉冷对千夫指，俯首甘为孺子牛。今天，让我们重温他的一生，纪念他不朽的精神。
                         </p>
-                    <p>
-                            1.	少年时期
+                        <p>
+                            1. 少年时期
                         </p>
-                    <p>
+                        <p>
                             周恩来1898年3月5日生于江苏淮安，望子成龙的父母给他取名“大鸾luan”，字翔宇，希望他可以像大鸟一样翱翔天空。读私塾期间，他接触进步教师，阅读爱国书报，在一次修身课上，老师向同学们提出了“为什么而读书”的问题，13岁的周恩来清晰而坚定地回答道：“为中华之崛起而读书！”
-                        </p>                        
+                        </p>
 
-                    <p>
+                        <p>
                             2.青年时期</p>
                         <p>
                             15岁的周恩来进入天津南开学校读书，在这里度过了4年学习生活。周恩来在南开学校学习认真勤奋，成绩优异，在同学中享有很高声望。他还经常利用业余时间研究革命理论，与同学们共同商讨国家大事，组织同学进行革命活动。
@@ -909,33 +1148,318 @@
                             1919年，周恩来毅然决定，不再滞留日本，而“返国图他兴”。他回国后进入天津南开大学学习，投身于五四运动。
                         </p>
                         <p>3.大革命时期</p>
-                    <p>1924年，26岁的周恩来从法国回到国内。当时第一次国共合作正在蓬勃兴起，他被任命为黄埔军校政治部主任。
-                        1926年3月，蒋介石制造“中山舰事件”，开始排挤国民党中的共产党员。1927年8月1日，周恩来和叶挺、朱德等共产党人领导南昌起义，向国民党反动派打响了第一枪。
-                        1935年1月在遵义会议上，周恩来坚决支持毛泽东的正确路线，为确立毛泽东在全党的领导地位起到十分重要的作用。
+                        <p>1924年，26岁的周恩来从法国回到国内。当时第一次国共合作正在蓬勃兴起，他被任命为黄埔军校政治部主任。
+                            1926年3月，蒋介石制造“中山舰事件”，开始排挤国民党中的共产党员。1927年8月1日，周恩来和叶挺、朱德等共产党人领导南昌起义，向国民党反动派打响了第一枪。
+                            1935年1月在遵义会议上，周恩来坚决支持毛泽东的正确路线，为确立毛泽东在全党的领导地位起到十分重要的作用。
                         </p>
-                    <p>    
-                                    新中国成立后，周恩来组织各党派、民主人士创建人民政协。他亲自起草的《共同纲领》规定了新中国的国家性质和人民的基本权利与义务。
-                                他日理万机，亲自主持制订和实施的几个五年计划，使国民经济顺利地得到恢复和发展。
-                        在外交上，他倡导了著名的和平共处五项原则。新中国正是高举和平共处五项原则的旗帜开始在国际政治舞台上发挥重大作用，而周恩来也因此成为举世闻名的卓越政治家和外交家。
-                            
-                        中国之变化已经天翻地覆，但岁月并没有冲淡人们对他的怀念，在他深爱的土地上，他的名字依旧穿透时空，感召人心，他永远是人民心中的好总理！
-                        </p>  
-                            </p>
+                        <p>
+                            新中国成立后，周恩来组织各党派、民主人士创建人民政协。他亲自起草的《共同纲领》规定了新中国的国家性质和人民的基本权利与义务。
+                            他日理万机，亲自主持制订和实施的几个五年计划，使国民经济顺利地得到恢复和发展。
+                            在外交上，他倡导了著名的和平共处五项原则。新中国正是高举和平共处五项原则的旗帜开始在国际政治舞台上发挥重大作用，而周恩来也因此成为举世闻名的卓越政治家和外交家。
+
+                            中国之变化已经天翻地覆，但岁月并没有冲淡人们对他的怀念，在他深爱的土地上，他的名字依旧穿透时空，感召人心，他永远是人民心中的好总理！
+                        </p>
+                        </p>
                         <p>红色展馆：天津之眼 天塔 世纪钟</p>
-                    <div id="idx4Cuw1" class="modal-footer ">
-                        <button id="idp9JIuF" class="btn btn-default " type="button" data-dismiss="modal">Close
+                        <div id="idx4Cuw1" class="modal-footer ">
+                            <button id="idp9JIuF" class="btn btn-default " type="button" data-dismiss="modal">Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Modal-6" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Modal-label-6">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×
+                            </span>
+                        </button>
+                        <h4 id="Modal-label-6" class="modal-title ">宁夏回族自治区
+                        </h4>
+                    </div>
+                    <div class="modal-body ">
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1871:/宁夏篇.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+                        <div class="modal-works ">
+                            <span>紫韵
+                            </span>
+                            <span>星火
+                            </span>
+                        </div>
+                        <p>星火宣讲人：徐鲁宁</p>
+                        <p>
+                            红色展馆：沙坡头 西夏王陵旧址 凤凰碑 海宝塔
+                        </p>
+                        <p>
+                            1.我是大连理工大学“紫韵・星火”暑假实践团的队长徐鲁宁，接下来将由我进行宁夏专场的宣讲。宣讲将从以下三个方面进行，分别是习近平的山海情，习近平与“生命之源”，习近平与“缚黄沙”。
+                        </p>
+                        <p>
+                            2.首先是第一部分，习近平的山海情。
+                            说起宁夏，会想起什么，是“大漠孤烟直，长河落日圆”，又或者是“塞上江南，神奇宁夏”。对于我来说，印象最深刻的莫过于前几年热播的一部名叫《山海情》的电视剧。
+                            《山海情》这部电视剧让宁夏闽宁镇走进全国观众视野，20多年来宁夏干部群众和福建援宁群体携手让“干沙滩”变成了“金沙滩”的故事让人动容和感慨。1997年4月，时任福建省委副书记的习近平，在担任福建省对口帮扶宁夏领导小组组长不久，亲赴西海固进行扶贫考察，为闽宁结亲、山海共融按下“快进键”。经过6天时间翻山越沟，习近平被西海固的极端贫困深深震撼，农民冒着细雨排队一整夜，只为将土豆卖给县里唯一的企业；孩子上课的教室没有门，玻璃窗是破的，有的地方没教室，老师用树枝在地面上写字来教学；水是咸的，一点水要从很远的地方挑来，没水洗澡……当时习近平说:“虽然穷地方我见过，我也住过。但是到了上个世纪90年代，改革开放好多年了，我们还有这么穷的地方，我心里受到很大冲击。那一次，我从银川到同心，然后到了海原、固原、彭阳、泾源、西吉。我到的一户人家，那真是家徒四壁，找不到什么值钱的东西，只看到窑洞顶上吊了一根绳，拴着一捆发菜，在当时那就算比较值钱的了。老百姓用水很困难，也洗不上澡。看了以后，我就下决心贯彻党中央决策部署，推动福建和宁夏开展对口帮扶。”
+                            怎样展开帮扶呢？一是坡地改梯田；二是发展马铃薯生产，加工成饲料卖给东部一些地方用来饲养鳗鱼，这一项当时就带动人均增收一二百元；三是抓井窖工程，解决群众生活用水问题。
+                            还有一个就是在调研西吉移民搬迁的吊庄玉泉营时，习近平提出了建设闽宁村的设想。村子选址和名字都是习近平定的，“闽宁”，福建与宁夏的简称合并。
+                            建设闽宁村也遇到了许许多多的困难。
+                            宁夏人民与贫困的缠斗，由来已久。黄土高原，数千年来见证着中国人与土地之间最坚韧的关系。移民“拔穷根”，某种意义上正是与这种关系角力。闽宁协作，势必要正面破解“迁徙”这一中国性难题。
+                            奠基后的闽宁村，就是两万亩的沙滩，第一批来自西海固地区的搬迁户，都在沙滩上搭建窝棚。白天搭建的帐篷，到了晚上就被大风吹走了。有的人，第二天就把移民指标换成一条金驼烟回去了。
+                            还未搬来的，干部要一户一户动员，用大巴车请去参观，看吃水、看走路、看上学。最初建房时，在沙滩上挖地坑，天热了，地坑就像蒸笼一样，热得人透不过气来，干部帮助已经搬来的群众建房，拉砖、买木料、打土坯。
+                            从干沙滩到金沙滩，从搬得来到稳得住，当年只有8000人的贫困移民村成了拥有6万多人的“江南小镇”，“闽宁村”也升级成了“闽宁镇”。从人均年收入500元到10000余元，从基础设施建设到公共服务提升，从数十家福建企业进驻到葡萄种植、光伏农业、肉牛养殖几大产业全面发力，从分散移民到整村生态移民，闽宁协作就这样被具象化为贺兰山下一座朝气蓬勃的城镇。
+                            闽宁扶贫协作的二十多年间，10个批次、161位福建援宁干部接力在脱贫一线奋斗，80个批次、2000多位专业技术工作者先后对教育、医疗等各项事业千里驰援。福建先后在贫困地区打井窖1.5万眼。到2017年，宁夏已累计搬迁128万人，完成了百万大迁徙。
+
+                        </p>
+                        <p>
+                            3第二部分，是习近平与“生命之源”。
+                            2016年7月18日，习近平来到泾源县大湾乡杨岭村看望父老乡亲，实地考察精准扶贫情况。西海固位于宁夏中南部地区，十年九旱，自然条件严酷，素有“苦瘠甲天下”之称。“水贵如油”。缺水，影响到了百姓的生存生活，也是贫困地区发展生产的最大制约因素。
+                            在考察中，除了察看屋内陈设外，习近平尤其留意村民家的淋浴设施。听说安了太阳能热水器，习近平说“挺好”，关心地问家里的小男孩：“你常洗澡吗？”
+                            习近平为什么对洗澡这件事这么挂心？这个问题其实有来由。1997年第一次来宁夏，习近平就为西海固地区的贫困状况所震撼。回忆当时的情况，习近平说，老百姓用水很困难，也洗不上澡。当年，习近平对口帮扶宁夏脱贫攻坚的一个重点就是做好水的文章。他抓井窖工程，解决群众生活用水问题；鼓励小圆井抽水灌溉，解决产业用水问题；通过生态移民搬迁，恢复植被、涵养水土……习近平说:“干旱地区主要是缺水的问题，就是要这样因地制宜解决，根据不同的条件，把天上水、地表水、地下水都利用好。”
+                            解决好老百姓吃水用水难题，习近平念兹在兹，无日他忘。首先，可以借助闽宁协作。在习近平亲自部署推进下，闽宁协作的种子逐渐生根、发芽，已经结出了累累硕果。23年来，福建省本着“宁夏所需，福建所能”，源源不断向宁夏贫困地区投入帮扶资金，在严重缺水的乡村打井窖，修建高标准梯田，解决了30万人、10余万头大牲畜的饮水困难问题。西海固地区做活了水的文章，初步解决了生活用水、产业用水的问题，并逐步实现开发用水和生态蓄水的良性循环。
+                            除了借助闽宁协作的帮扶，作为我国唯一一个全境属于黄河流域的省份，借助黄河水实现缺水问题，也是打造“塞上江南”的最优途径之一。“让黄河成为造福人民的幸福河”是习近平总书记的殷切期望，也是宁夏开展黄河生态保护和治理、推动经济社会高质量发展的责任使命。
+                            宁夏明确沿黄各市县区断面水质标准，分段治理、严格监测，倒逼沿黄市县区保持水质达标，黄河干流宁夏段连续六年保持“Ⅱ类进Ⅱ类出”。这个“Ⅱ类”是什么意思呢？按照国家有关标准，地表水一般分为5类，Ⅰ类主要指源头水国家自然保护区，这些都是极为干净的冰雪融水，Ⅱ类水是用于生活饮用水、地表水源地、一级保护区、珍稀水生动植物的栖息地等，这类水经过水厂的一系列处理后，能用于人们的生活饮水。所以宁夏水资源治理成效显著。
+                            让我们聚焦位于宁夏中部干旱带的红寺堡扬水工程。它是国家“八七”扶贫攻坚和自治区“双百”扶贫攻坚水利工程，跨中宁县、红寺堡区、利通区、同心县4县，承担着百万亩农田灌溉及区域城乡人饮、产业发展、生态安全供水保障任务。14座泵站、305米高扬程“爬升”和149.67公里主渠道输送，甘甜黄河水为全国最大的易地生态移民扬黄扶贫集中安置区红寺堡灌区带来勃勃生机。
+                            水，不仅解决了老百姓生活生产的问题，种活了庄稼，更浇灌着老百姓摘掉“穷帽子”的希望种子。如今，在西海固地区的很多村庄，几乎家家都已通上自来水。
+
+                        </p>
+                        <p>
+                            4.第三部分，习近平与“缚黄沙”。
+                            远离干旱、风沙、贫困，是萦绕在西北人心头的梦想，也是习近平心中深深的牵挂。
+                            昔日的宁夏灵武白芨滩林场黄沙漫天。因西、北、东三面分别毗邻腾格里沙漠、乌兰布和沙漠和毛乌素沙地，很长一段时间里，宁夏人的记忆都是“一年一场风，从春刮到冬；风吹沙子走，抬脚不见踪”。白芨滩国家级自然保护区管理局原党委书记王有德不甘心，带领职工在流动沙丘固沙造林，立誓与沙漠抗争。
+                            “养个娃娃容易，在沙漠里种棵树难。”此话不假，治沙人千辛万苦栽好的树苗，常常一夜之间就被风沙埋葬，但他们还是不停地补栽，直到树木连成片，把黄沙牢牢锁住……
+                            昔日沙洲变成了真正的绿洲。如今，春意盎然的灵武白芨滩国家级自然保护区里，沙丘上长着柠条、花棒、沙柳等植物，诉说着治沙英雄王有德与治沙人在风雨中固沙造林的动人故事，也书写着宁夏治沙奇迹，展现着人类的顽强不屈。
+                            2008年，时任国家副主席的习近平来到宁夏，专程看望了王有德和他的同事们。面对一望无际的麦草方格，他紧紧握住王有德的手说：“我是来向你学习的。你们在这里作出了很大贡献，非常了不起。”
+                            习近平对围拢过来的治沙人说；“这是一项平凡而伟大的事业，也坚定了我们治沙的决心。对你们的事业，我们会全力支持。”“平凡而伟大”，简单的五个字道出了治沙事业的艰辛，也让人深深感受到习近平对于生态环境保护工作的高度重视。
+                            年年岁岁，王有德和数百名职工运用扎麦草方格的方法坚持治沙，在浩瀚的毛乌素沙漠织成了锁住风沙的茫茫绿网，守护着黄河以及河岸万顷良田。不仅如此，为防沙固沙，宁夏治沙人继续摸索出卵石防火带、灌溉造林带、草障植物带、前沿阻沙带、封沙育草带“五带一体”的治沙防护体系，并实施三北防护林、退耕还林等生态工程。一代又一代治沙人接力植树，防风固沙林60万亩，控制流沙近百万亩，筑起了一道东西长47公里、南北宽38公里的绿色屏障，有效阻止了毛乌素沙漠南移和西扩。
+                            从1997年开始，习近平先后于2008年、2016年、2020年赴宁夏考察，与宁夏结下不解之缘，而这片土地也在习近平总书记的带领下越来越焕发出新的生机活力。
+                        </p>
+                    </div>
+                    <div class="modal-footer ">
+                        <button class="btn btn-default " type="button" data-dismiss="modal">Close
                         </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        
+        <div id="Video-1" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Vedio-label-1">
+            <div id="idfe9h5B" class="modal-dialog " role="document">
+                <div id="idDnIsze" class="modal-content ">
+                    <div id="idsXKs14" class="modal-header ">
+                        <button id="idlzbcxn" class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span id="id6RF3uP" aria-hidden="true">×
+                            </span>
+                        </button>
+                        <h4 id="Vedio-label-1" class="modal-title ">大工红色历史
+                        </h4>
+                    </div>
+                    <div class="modal-body ">
 
-    
+
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1820:/1-大工红色历史.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
 
 
 
+                        <div class="modal-works ">
+                            <span>紫韵
+                            </span>
+                            <span>星火
+                            </span>
+                        </div>
+                        <p>紫韵宣讲家：王柏慧 徐欣一
+                        </p>
+                    </div>
+                    <div class="modal-footer ">
+                        <button class="btn btn-default " type="button" data-dismiss="modal">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Video-2" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Vedio-label-2">
+            <div id="idfe9h5B" class="modal-dialog " role="document">
+                <div id="idDnIsze" class="modal-content ">
+                    <div id="idsXKs14" class="modal-header ">
+                        <button id="idlzbcxn" class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span id="id6RF3uP" aria-hidden="true">×
+                            </span>
+                        </button>
+                        <h4 id="Vedio-label-2" class="modal-title ">二十大宣讲
+                        </h4>
+                    </div>
+                    <div class="modal-body ">
+
+
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1817:/2-二十大宣讲.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+                        <h5><b>对同学的二十大相关问题的采访</b></h5>
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1826:/采访.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+                        <h5><b>焦子健与杨泽鹏倾情演出的相声</b></h5>
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1818:/3-相声.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+
+                        <div class="modal-works ">
+                            <span>紫韵
+                            </span>
+                            <span>星火
+                            </span>
+                        </div>
+                        <p>紫韵宣讲家：赵成硕 王泽凯 焦子健 杨泽鹏
+                    </div>
+                    <div class="modal-footer ">
+                        <button class="btn btn-default " type="button" data-dismiss="modal">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Video-3" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Vedio-label-3">
+            <div id="idfe9h5B" class="modal-dialog " role="document">
+                <div id="idDnIsze" class="modal-content ">
+                    <div id="idsXKs14" class="modal-header ">
+                        <button id="idlzbcxn" class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span id="id6RF3uP" aria-hidden="true">×
+                            </span>
+                        </button>
+                        <h4 id="Vedio-label-3" class="modal-title ">标题
+                        </h4>
+                    </div>
+                    <div class="modal-body ">
+
+                        <p>内容</p>
+
+
+
+                        <div class="modal-works ">
+                            <span>紫韵
+                            </span>
+                            <span>星火
+                            </span>
+                        </div>
+                        <p>紫韵宣讲家：杨泽鹏
+                    </div>
+                    <div class="modal-footer ">
+                        <button class="btn btn-default " type="button" data-dismiss="modal">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Video-4" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Vedio-label-4">
+            <div id="idfe9h5B" class="modal-dialog " role="document">
+                <div id="idDnIsze" class="modal-content ">
+                    <div id="idsXKs14" class="modal-header ">
+                        <button id="idlzbcxn" class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span id="id6RF3uP" aria-hidden="true">×
+                            </span>
+                        </button>
+                        <h4 id="Vedio-label-4" class="modal-title ">红色宣讲
+                        </h4>
+                    </div>
+                    <div class="modal-body ">
+
+
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1870:/辽宁篇.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+
+
+
+                        <div class="modal-works ">
+                            <span>紫韵
+                            </span>
+                            <span>星火
+                            </span>
+                        </div>
+                        <p>紫韵宣讲家：邹志鹏
+                    </div>
+                    <div class="modal-footer ">
+                        <button class="btn btn-default " type="button" data-dismiss="modal">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Video-5" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Vedio-label-5">
+            <div id="idfe9h5B" class="modal-dialog " role="document">
+                <div id="idDnIsze" class="modal-content ">
+                    <div id="idsXKs14" class="modal-header ">
+                        <button id="idlzbcxn" class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span id="id6RF3uP" aria-hidden="true">×
+                            </span>
+                        </button>
+                        <h4 id="Vedio-label-5" class="modal-title ">宁夏篇
+                        </h4>
+                    </div>
+                    <div class="modal-body ">
+
+
+                        <video class="img-responsive "
+                            src="http://storage.live.com/items/8ACFA6230445AA76!1871:/宁夏篇.mp4?authkey=!AOin63nDaVCttug"
+                            controls="controls"></video>
+
+
+
+                        <div class="modal-works ">
+                            <span>紫韵
+                            </span>
+                            <span>星火
+                            </span>
+                        </div>
+                        <p>紫韵宣讲家：徐鲁宁
+                    </div>
+                    <div class="modal-footer ">
+                        <button class="btn btn-default " type="button" data-dismiss="modal">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Video-6" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Vedio-label-6">
+            <div id="idfe9h5B" class="modal-dialog " role="document">
+                <div id="idDnIsze" class="modal-content ">
+                    <div id="idsXKs14" class="modal-header ">
+                        <button id="idlzbcxn" class="close " type="button" data-dismiss="modal" aria-label="Close">
+                            <span id="id6RF3uP" aria-hidden="true">×
+                            </span>
+                        </button>
+                        <h4 id="Vedio-label-6" class="modal-title ">追寻习近平的足迹
+                        </h4>
+                    </div>
+                    <div class="modal-body ">
+
+
+                        <p>内容</p>
+
+
+
+                        <div class="modal-works ">
+                            <span>紫韵
+                            </span>
+                            <span>星火
+                            </span>
+                        </div>
+                        <p>紫韵宣讲家：杨如琳 杨煜培 刘佳楠
+                    </div>
+                    <div class="modal-footer ">
+                        <button class="btn btn-default " type="button" data-dismiss="modal">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script id="idkMPio2" src="https://cdn.staticfile.org/jquery/1.11.3/jquery.min.js">
         </script>
@@ -945,9 +1469,8 @@
         </script>
         <script id="idmj7oRv" src="js/theme-scripts.js">
         </script>
-    </div>
-    <!--YeMian1htmlEnd-->
-    
+        <!--YeMian1htmlEnd-->
+
 
 </body>
 <!--YeMian1jslinkStart -->
@@ -959,30 +1482,30 @@
 
 <style>
     /* 设置整体大框架 */
-    .overall{
+    .overall {
         /* 设置窗口大小 */
         width: 900px;
         height: 500px;
 
         /* 将弹性 <div> 元素的所有项目的居中对齐 */
-      align-items: center; 
+        align-items: center;
 
         /* 设置图片外边距 左右居中 上方5% */
-        margin: 5% auto;        
+        margin: 5% auto;
     }
 
-    .content{
+    .content {
         /* 设置相对定位 */
         position: relative;
         height: 400px;
     }
 
-    .content ul{
+    .content ul {
         /* 去除标签<ul><li></li></ul>默认加的样式 */
         list-style-type: none;
     }
 
-    .content ul>li{
+    .content ul>li {
         width: 600px;
         height: 300px;
 
@@ -997,28 +1520,28 @@
         */
         opacity: 0;
     }
-    
+
     /* 设置每个图片的样式 */
-    .content ul>li img{    
+    .content ul>li img {
         /* 设置每一张图片的大小 */
         width: 900px;
         height: 500px;
 
         /* 设置圆角边框 */
         border-radius: 5%;
-     
+
         /* 设置边框样式 */
-        border: 5px solid #0e0600;        
+        border: 5px solid #0e0600;
     }
 
     /* 设置轮播图下面的小点 */
-    .content ol{
+    .content ol {
         /* 设置相对定位 */
         position: relative;
 
         /* 设置网格布局 */
         display: grid;
-        
+
         /* 设置网格布局中的列数及宽度 */
         grid-template-columns: repeat(3, 75px);
 
@@ -1028,7 +1551,7 @@
         /* 设置网格行与列之间的间隙 */
         /* 间隙为1em */
         grid-gap: 1em;
-        gap:1em;
+        gap: 1em;
 
         /* 右浮动 */
         float: right;
@@ -1046,7 +1569,7 @@
         left: 0;
     }
 
-    .content ol li{
+    .content ol li {
         /* 设置每个小点的大小 */
         width: 25px;
         height: 10px;
@@ -1076,81 +1599,72 @@
 
 
 <script>
-// 当页面载入的时候加载这个函数
-window.onload = function()
-{
+    // 当页面载入的时候加载这个函数
+    window.onload = function () {
 
-// 获取大盒子的内容 为content的第一个元素 也就是ul中的内容
-var content = this.document.getElementsByClassName("content")[0];
+        // 获取大盒子的内容 为content的第一个元素 也就是ul中的内容
+        var content = this.document.getElementsByClassName("content")[0];
 
-// 获取ul中的li
-var li = content.getElementsByTagName("li");
+        // 获取ul中的li
+        var li = content.getElementsByTagName("li");
 
-// 函数传入两个参数，(i,j)
-function fun(i, j)
-{//转换图片函数，就是把透明度改了一下        
-    li[i].style.opacity=1;
-    li[j].style.opacity=0;
+        // 函数传入两个参数，(i,j)
+        function fun(i, j) {//转换图片函数，就是把透明度改了一下        
+            li[i].style.opacity = 1;
+            li[j].style.opacity = 0;
 
-    // 然后也把小图标的颜色改一下
-    // 把图标改成白色
-    // 如果图片数量发生改变 那么下面的3也要变成图片的数量
-    li[i + 3].style.backgroundColor = "#ffffff";
+            // 然后也把小图标的颜色改一下
+            // 把图标改成白色
+            // 如果图片数量发生改变 那么下面的3也要变成图片的数量
+            li[i + 3].style.backgroundColor = "#ffffff";
 
-    // 把图标改成透明
-    li[j + 3].style.backgroundColor = "#00000000";
-}
+            // 把图标改成透明
+            li[j + 3].style.backgroundColor = "#00000000";
+        }
 
-// 默认情况下轮播图为第一张
-fun(0, 1);//初始化下
-var i = 0;
-function auto()
-{//轮播循环函数
-    i ++;
-    // 当数组越界的时候
-    if(i >= 3)
-    {
-    // 置为0
-        i = 0;
-        // 然后递归重新开始
-        // 这里的2位3-1的意思
-        fun(0, 2);
+        // 默认情况下轮播图为第一张
+        fun(0, 1);//初始化下
+        var i = 0;
+        function auto() {//轮播循环函数
+            i++;
+            // 当数组越界的时候
+            if (i >= 3) {
+                // 置为0
+                i = 0;
+                // 然后递归重新开始
+                // 这里的2位3-1的意思
+                fun(0, 2);
+            }
+            else {
+                // 反之递归
+                fun(i, i - 1);
+            }
+        }
+        // 设置变化的时间
+        timer = this.setInterval(auto, 2000);
+
+        // 设置鼠标在轮播图上的时候 轮播图就停止播放
+        content.onmouseover = function () {
+            //鼠标划上去，停止轮播
+            clearInterval(timer);
+        }
+
+        // 设置鼠标在轮播图上的时候 轮播图就继续播放
+        content.onmouseout = function () {
+            //鼠标划出，继续轮播
+            timer = setInterval(auto, 2000); //调用定时器
+        }
+        var j = 0;
+        for (; j < 3; j++) {
+            //点击小图标也可以转换图片
+            li[j + 3].index = j;
+            // 当点击小图标进行的函数
+            li[j + 3].onclick = function () {
+                fun(this.index, i)
+                i = this.index;
+            }
+        }
     }
-    else
-    {
-        // 反之递归
-        fun(i, i - 1);
-    } 
-}
-// 设置变化的时间
-timer = this.setInterval(auto, 2000);
-
-// 设置鼠标在轮播图上的时候 轮播图就停止播放
-content.onmouseover = function () 
-{ 
-    //鼠标划上去，停止轮播
-    clearInterval(timer);
-}
-
-// 设置鼠标在轮播图上的时候 轮播图就继续播放
-content.onmouseout = function () 
-{ 
-    //鼠标划出，继续轮播
-    timer = setInterval(auto, 2000); //调用定时器
-}
-var j = 0;
-for(; j < 3; j++)
-{
-    //点击小图标也可以转换图片
-    li[j + 3].index = j;
-    // 当点击小图标进行的函数
-    li[j + 3].onclick = function()
-    {
-        fun(this.index, i)
-        i = this.index;
-    }
-}
-}
 </script>
 
 
