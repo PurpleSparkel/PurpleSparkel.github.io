@@ -695,6 +695,7 @@ and (max-width : 480px) {
     font-size: 20px;
 }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -710,7 +711,7 @@ and (max-width : 480px) {
   right: 0;
   margin: auto auto;
   overflow: hidden;
-  position: absolute;
+  position: relative;
   -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
@@ -721,24 +722,6 @@ svg {
   z-index: 1;
   width: 681px;
   height: 384px;
-}
-
-button {
-  position: absolute;
-  z-index: 50;
-  width: 40px;
-  overflow: hidden;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  background: #fff;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-}
-button:focus {
-  outline-width: 0;
 }
 
 circle {

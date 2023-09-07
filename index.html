@@ -60,215 +60,6 @@
     </nav>
 
 
-    <div class='parent'>
-        <div class='slider'>
-            <button title="swiper" type="button" id='right' class='right' name="button">
-
-                <svg version="1.1" id="Capa_1" width='40px' height='40px ' xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
-                    style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
-                    <g>
-                        <path style='fill: #9d9d9d;' d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                      c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
-                      ">
-                    </g>
-
-                </svg>
-
-            </button>
-            <button title="swiper" type="button" id='left' class='left' name="button">
-                <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 477.175 477.175"
-                    style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
-                    <g>
-                        <path style='fill: #9d9d9d;' d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-                      c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z">
-                    </g>
-                </svg>
-            </button>
-            <svg id='svg2' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <circle id='circle1' class='circle1 steap' cx="34px" cy="49%" r="20" />
-                <circle id='circle2' class='circle2 steap' cx="34px" cy="49%" r="100" />
-                <circle id='circle3' class='circle3 steap' cx="34px" cy="49%" r="180" />
-                <circle id='circle4' class='circle4 steap' cx="34px" cy="49%" r="260" />
-                <circle id='circle5' class='circle5 steap' cx="34px" cy="49%" r="340" />
-                <circle id='circle6' class='circle6 steap' cx="34px" cy="49%" r="420" />
-                <circle id='circle7' class='circle7 steap' cx="34px" cy="49%" r="500" />
-                <circle id='circle8' class='circle8 steap' cx="34px" cy="49%" r="580" />
-                <circle id='circle9' class='circle9 steap' cx="34px" cy="49%" r="660" />
-            </svg>
-            <svg id='svg1' class='up2' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <circle id='circle10' class='circle10 steap' cx="648px" cy="49%" r="20" />
-                <circle id='circle11' class='circle11 steap' cx="648px" cy="49%" r="100" />
-                <circle id='circle12' class='circle12 steap' cx="648px" cy="49%" r="180" />
-                <circle id='circle13' class='circle13 steap' cx="648px" cy="49%" r="260" />
-                <circle id='circle14' class='circle14 steap' cx="648px" cy="49%" r="340" />
-                <circle id='circle15' class='circle15 steap' cx="648px" cy="49%" r="420" />
-                <circle id='circle16' class='circle16 steap' cx="648px" cy="49%" r="500" />
-                <circle id='circle17' class='circle17 steap' cx="648px" cy="49%" r="580" />
-                <circle id='circle18' class='circle18 steap' cx="648px" cy="49%" r="660" />
-            </svg>
-            <div id='slide1' class='slide1 up1'></div>
-            <div id='slide2' class='slide2'></div>
-            <div id='slide3' class='slide3'></div>
-            <div id='slide4' class='slide4'></div>
-            <div id='slide5' class='slide5'></div>
-
-
-        </div>
-    </div>
-    <script>
-        var curpage = 1;
-        var sliding = false;
-        var click = true;
-        var left = document.getElementById('left');
-        var right = document.getElementById('right');
-        var pagePrefix = 'slide';
-        var pageShift = 500;
-        var transitionPrefix = 'circle';
-        var svg = true;
-
-        function leftSlide() {
-            if (click) {
-                if (curpage == 1) curpage = 6;
-                console.log('woek');
-                sliding = true;
-                curpage--;
-                svg = true;
-                click = false;
-                for (k = 1; k <= 5; k++) {
-                    var a1 = document.getElementById(pagePrefix + k);
-                    a1.className += ' tran';
-                }
-                setTimeout(() => {
-                    move();
-                }, 200);
-                setTimeout(() => {
-                    for (k = 1; k <= 5; k++) {
-                        var a1 = document.getElementById(pagePrefix + k);
-                        a1.classList.remove('tran');
-                    };
-                }, 1400);
-            }
-        }
-
-
-        function rightSlide() {
-            if (click) {
-                if (curpage == 5) curpage = 0;
-                console.log('woek');
-                sliding = true;
-                curpage++;
-                svg = false;
-                click = false;
-                for (k = 1; k <= 5; k++) {
-                    var a1 = document.getElementById(pagePrefix + k);
-                    a1.className += ' tran';
-                }
-                setTimeout(() => {
-                    move();
-                }, 200);
-                setTimeout(() => {
-                    for (k = 1; k <= 5; k++) {
-                        var a1 = document.getElementById(pagePrefix + k);
-                        a1.classList.remove('tran');
-                    };
-                }, 1400);
-            }
-        }
-
-
-        function move() {
-            if (sliding) {
-                sliding = false;
-                if (svg) {
-                    for (j = 1; j <= 9; j++) {
-                        var c = document.getElementById(transitionPrefix + j);
-                        c.classList.remove("steap");
-                        c.setAttribute("class", (transitionPrefix + j) + " streak")
-                        console.log('streak');
-                    }
-                } else {
-                    for (j = 10; j <= 18; j++) {
-                        var c = document.getElementById(transitionPrefix + j);
-                        c.classList.remove("steap");
-                        c.setAttribute("class", (transitionPrefix + j) + " streak")
-                        console.log('streak');
-                    }
-                }
-
-                // for(k=1;k<=4;k++){
-                //   var a1 = document.getElementById(pagePrefix + k);
-                //   a1.className += ' tran';
-                // }
-
-                setTimeout(() => {
-                    for (i = 1; i <= 5; i++) {
-                        if (i == curpage) {
-                            var a = document.getElementById(pagePrefix + i);
-                            a.className += ' up1';
-                        } else {
-                            var b = document.getElementById(pagePrefix + i);
-                            b.classList.remove("up1");
-                        }
-                    };
-                    sliding = true;
-                }, 600);
-                setTimeout(() => {
-                    click = true;
-                }, 1700);
-
-
-
-                setTimeout(() => {
-                    if (svg) {
-                        for (j = 1; j <= 9; j++) {
-                            var c = document.getElementById(transitionPrefix + j);
-                            c.classList.remove("streak");
-                            c.setAttribute("class", (transitionPrefix + j) + " steap");
-                        }
-                    } else {
-                        for (j = 10; j <= 18; j++) {
-                            var c = document.getElementById(transitionPrefix + j);
-                            c.classList.remove("streak");
-                            c.setAttribute("class", (transitionPrefix + j) + " steap");
-                        }
-                        sliding = true;
-                    }
-                }, 850);
-                setTimeout(() => {
-                    click = true;
-                }, 1700);
-            }
-
-        }
-
-        left.onmousedown = () => {
-            leftSlide();
-        }
-
-        right.onmousedown = () => {
-            rightSlide();
-        }
-
-        document.onkeydown = (e) => {
-            if (e.keyCode == 37) {
-                leftSlide();
-
-            }
-            else if (e.keyCode == 39) {
-                rightSlide();
-
-            }
-        }
-
-        //for codepen header
-        setTimeout(() => {
-            rightSlide();
-
-        }, 500)
-
-    </script>
     <!-- <div class="blockLine"></div>
         <section id="portfolio">
 
@@ -435,112 +226,310 @@
 
 
                 </div>
+                <button title="swiper" type="button" id='right' class='right' name="button" style="display: none;">
+                </button>
+                <button title="swiper" type="button" id='left' class='left' name="button" style="display: none;">
+                </button>
             </div>
+            <div class='parent'>
+                <div class='slider'>
+
+                    <svg id='svg2' class='up2' xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle id='circle1' class='circle1 steap' cx="34px" cy="49%" r="20" />
+                        <circle id='circle2' class='circle2 steap' cx="34px" cy="49%" r="100" />
+                        <circle id='circle3' class='circle3 steap' cx="34px" cy="49%" r="180" />
+                        <circle id='circle4' class='circle4 steap' cx="34px" cy="49%" r="260" />
+                        <circle id='circle5' class='circle5 steap' cx="34px" cy="49%" r="340" />
+                        <circle id='circle6' class='circle6 steap' cx="34px" cy="49%" r="420" />
+                        <circle id='circle7' class='circle7 steap' cx="34px" cy="49%" r="500" />
+                        <circle id='circle8' class='circle8 steap' cx="34px" cy="49%" r="580" />
+                        <circle id='circle9' class='circle9 steap' cx="34px" cy="49%" r="660" />
+                    </svg>
+                    <svg id='svg1' class='up2' xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle id='circle10' class='circle10 steap' cx="648px" cy="49%" r="20" />
+                        <circle id='circle11' class='circle11 steap' cx="648px" cy="49%" r="100" />
+                        <circle id='circle12' class='circle12 steap' cx="648px" cy="49%" r="180" />
+                        <circle id='circle13' class='circle13 steap' cx="648px" cy="49%" r="260" />
+                        <circle id='circle14' class='circle14 steap' cx="648px" cy="49%" r="340" />
+                        <circle id='circle15' class='circle15 steap' cx="648px" cy="49%" r="420" />
+                        <circle id='circle16' class='circle16 steap' cx="648px" cy="49%" r="500" />
+                        <circle id='circle17' class='circle17 steap' cx="648px" cy="49%" r="580" />
+                        <circle id='circle18' class='circle18 steap' cx="648px" cy="49%" r="660" />
+                    </svg>
+                    <div id='slide1' class='slide1 up1'></div>
+                    <div id='slide2' class='slide2'></div>
+                    <div id='slide3' class='slide3'></div>
+                    <div id='slide4' class='slide4'></div>
+                    <div id='slide5' class='slide5'></div>
 
 
+                </div>
+            </div>
+            <script>
+                var autoplayInterval;
+
+                // 在合适的地方定义轮播间隔（以毫秒为单位）
+                var autoplayDelay = 5000; // 10秒钟
+                var curpage = 1;
+                var sliding = false;
+                var click = true;
+                var left = document.getElementById('left');
+                var right = document.getElementById('right');
+                var pagePrefix = 'slide';
+                var pageShift = 500;
+                var transitionPrefix = 'circle';
+                var svg = true;
+
+                function leftSlide() {
+                    if (click) {
+                        if (curpage == 1) curpage = 6;
+                        console.log('woek');
+                        sliding = true;
+                        curpage--;
+                        svg = true;
+                        click = false;
+                        for (k = 1; k <= 5; k++) {
+                            var a1 = document.getElementById(pagePrefix + k);
+                            a1.className += ' tran';
+                        }
+                        setTimeout(() => {
+                            move();
+                        }, 200);
+                        setTimeout(() => {
+                            for (k = 1; k <= 5; k++) {
+                                var a1 = document.getElementById(pagePrefix + k);
+                                a1.classList.remove('tran');
+                            };
+                        }, 1400);
+                    }
+                }
+
+
+                function rightSlide() {
+                    if (click) {
+                        if (curpage == 5) curpage = 0;
+                        console.log('woek');
+                        sliding = true;
+                        curpage++;
+                        svg = false;
+                        click = false;
+                        for (k = 1; k <= 5; k++) {
+                            var a1 = document.getElementById(pagePrefix + k);
+                            a1.className += ' tran';
+                        }
+                        setTimeout(() => {
+                            move();
+                        }, 200);
+                        setTimeout(() => {
+                            for (k = 1; k <= 5; k++) {
+                                var a1 = document.getElementById(pagePrefix + k);
+                                a1.classList.remove('tran');
+                            };
+                        }, 1400);
+                    }
+                }
+
+
+                function move() {
+                    if (sliding) {
+                        sliding = false;
+                        if (svg) {
+                            for (j = 1; j <= 9; j++) {
+                                var c = document.getElementById(transitionPrefix + j);
+                                c.classList.remove("steap");
+                                c.setAttribute("class", (transitionPrefix + j) + " streak")
+                                console.log('streak');
+                            }
+                        } else {
+                            for (j = 10; j <= 18; j++) {
+                                var c = document.getElementById(transitionPrefix + j);
+                                c.classList.remove("steap");
+                                c.setAttribute("class", (transitionPrefix + j) + " streak")
+                                console.log('streak');
+                            }
+                        }
+
+                        // for(k=1;k<=4;k++){
+                        //   var a1 = document.getElementById(pagePrefix + k);
+                        //   a1.className += ' tran';
+                        // }
+
+                        setTimeout(() => {
+                            for (i = 1; i <= 5; i++) {
+                                if (i == curpage) {
+                                    var a = document.getElementById(pagePrefix + i);
+                                    a.className += ' up1';
+                                } else {
+                                    var b = document.getElementById(pagePrefix + i);
+                                    b.classList.remove("up1");
+                                }
+                            };
+                            sliding = true;
+                        }, 600);
+                        setTimeout(() => {
+                            click = true;
+                        }, 1700);
+
+
+
+                        setTimeout(() => {
+                            if (svg) {
+                                for (j = 1; j <= 9; j++) {
+                                    var c = document.getElementById(transitionPrefix + j);
+                                    c.classList.remove("streak");
+                                    c.setAttribute("class", (transitionPrefix + j) + " steap");
+                                }
+                            } else {
+                                for (j = 10; j <= 18; j++) {
+                                    var c = document.getElementById(transitionPrefix + j);
+                                    c.classList.remove("streak");
+                                    c.setAttribute("class", (transitionPrefix + j) + " steap");
+                                }
+                                sliding = true;
+                            }
+                        }, 850);
+                        setTimeout(() => {
+                            click = true;
+                        }, 1700);
+                        if (autoplayInterval) {
+                            clearInterval(autoplayInterval);
+                        }
+                        autoplayInterval = setInterval(rightSlide, autoplayDelay);
+                    }
+
+                }
+
+                left.onmousedown = () => {
+                    leftSlide();
+                }
+
+                right.onmousedown = () => {
+                    rightSlide();
+                }
+
+                document.onkeydown = (e) => {
+                    if (e.keyCode == 37) {
+                        leftSlide();
+
+                    }
+                    else if (e.keyCode == 39) {
+                        rightSlide();
+
+                    }
+                }
+
+                //for codepen header
+                setTimeout(() => {
+                    rightSlide();
+
+                }, 500)
+                autoplayInterval = setInterval(rightSlide, autoplayDelay);
+            </script>
 
         </div>
 
 
 
 
-
-        <div id="idqorxwP" class="row row-0-gutter ">
-            <div id="id4Oen4E" class="col-md-6 col-0-gutter ">
-                <div id="idzvzvcF" class="ot-portfolio-item ">
-                    <figure id="idZFbVL3" class="effect-bubba ">
-                        <img id="idwiHDXj" class="img-responsive " src="images/demo/portfolio-1.jpg" alt="img02" />
-                        <figcaption id="idzAxcLz">
-                            <h2 id="id9OUzV6">河南省安阳市
-                            </h2>
-                            <p id="idSZIeDk">重走红旗渠，再悟山碑魂
-                            </p>
-                            <a id="idcF4hpv" href="#" data-toggle="modal" data-target="#Modal-1">View more
-                            </a>
-                        </figcaption>
-                    </figure>
+        <section id="portfolio">
+            <div id="idqorxwP" class="row row-0-gutter ">
+                <div id="id4Oen4E" class="col-md-6 col-0-gutter ">
+                    <div id="idzvzvcF" class="ot-portfolio-item ">
+                        <figure id="idZFbVL3" class="effect-bubba ">
+                            <img id="idwiHDXj" class="img-responsive " src="images/demo/portfolio-1.jpg" alt="img02" />
+                            <figcaption id="idzAxcLz">
+                                <h2 id="id9OUzV6">河南省安阳市
+                                </h2>
+                                <p id="idSZIeDk">重走红旗渠，再悟山碑魂
+                                </p>
+                                <a id="idcF4hpv" href="#" data-toggle="modal" data-target="#Modal-1">View more
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="idUSISDg" class="col-md-6 col-0-gutter ">
+                    <div id="idbFvmkI" class="ot-portfolio-item ">
+                        <figure id="idnbE4iE" class="effect-bubba ">
+                            <img id="idB14Bki" class="img-responsive " src="images/demo/portfolio-2.jpg" alt="img02" />
+                            <figcaption id="idGivVdT">
+                                <h2 id="idQMlexf">辽宁省沈阳市
+                                </h2>
+                                <p id="idp1VBKH">勿忘国耻，警钟长鸣
+                                </p>
+                                <a id="idSrihsw" href="#" data-toggle="modal" data-target="#Modal-2">View more
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
-            <div id="idUSISDg" class="col-md-6 col-0-gutter ">
-                <div id="idbFvmkI" class="ot-portfolio-item ">
-                    <figure id="idnbE4iE" class="effect-bubba ">
-                        <img id="idB14Bki" class="img-responsive " src="images/demo/portfolio-2.jpg" alt="img02" />
-                        <figcaption id="idGivVdT">
-                            <h2 id="idQMlexf">辽宁省沈阳市
-                            </h2>
-                            <p id="idp1VBKH">勿忘国耻，警钟长鸣
-                            </p>
-                            <a id="idSrihsw" href="#" data-toggle="modal" data-target="#Modal-2">View more
-                            </a>
-                        </figcaption>
-                    </figure>
+            <div id="idRlVM8i" class="row row-0-gutter ">
+                <div id="iduVJHmi" class="col-md-6 col-0-gutter ">
+                    <div id="idFl68wP" class="ot-portfolio-item ">
+                        <figure id="id9nnFo1" class="effect-bubba ">
+                            <img id="idqndcQ2" class="img-responsive " src="images/demo/portfolio-3.jpg" alt="img02" />
+                            <figcaption id="idbenRic">
+                                <h2 id="idCFqlDr">辽宁省丹东市
+                                </h2>
+                                <p id="idsoeVAj">抗美援朝 保家卫国
+                                </p>
+                                <a id="id67zrT6" href="#" data-toggle="modal" data-target="#Modal-3">View more
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="idLoCuIS" class="col-md-6 col-0-gutter ">
+                    <div id="idvUm4CB" class="ot-portfolio-item ">
+                        <figure id="idfzGQWj" class="effect-bubba ">
+                            <img id="id8X2jvZ" class="img-responsive " src="images/demo/portfolio-5.jpg" alt="img02" />
+                            <figcaption id="idqMiVW6">
+                                <h2 id="idaUvKl4">天津市
+                                </h2>
+                                <p id="idW8pTal">辅弼公正随领袖，鞠躬尽瘁强中华
+                                </p>
+                                <a id="idcbIgjW" href="#" data-toggle="modal" data-target="#Modal-5">View more
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="idRlVM8i" class="row row-0-gutter ">
-            <div id="iduVJHmi" class="col-md-6 col-0-gutter ">
-                <div id="idFl68wP" class="ot-portfolio-item ">
-                    <figure id="id9nnFo1" class="effect-bubba ">
-                        <img id="idqndcQ2" class="img-responsive " src="images/demo/portfolio-3.jpg" alt="img02" />
-                        <figcaption id="idbenRic">
-                            <h2 id="idCFqlDr">辽宁省丹东市
-                            </h2>
-                            <p id="idsoeVAj">抗美援朝 保家卫国
-                            </p>
-                            <a id="id67zrT6" href="#" data-toggle="modal" data-target="#Modal-3">View more
-                            </a>
-                        </figcaption>
-                    </figure>
+            <div id="idM8rkrw" class="row row-0-gutter ">
+                <div id="idX9Fkmp" class="col-md-6 col-0-gutter ">
+                    <div id="idXRgK5T" class="ot-portfolio-item ">
+                        <figure id="idEUesp4" class="effect-bubba ">
+                            <img id="idOcxTcH" class="img-responsive " src="images/demo/portfolio-4.jpg" alt="img02" />
+                            <figcaption id="idNP7f96">
+                                <h2 id="idoaATxd">湖南省长沙市
+                                </h2>
+                                <p id="idPPTIlb">红色潇湘铸忠魂
+                                </p>
+                                <a id="idNjzssx" href="#" data-toggle="modal" data-target="#Modal-4">View more
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-md-6 col-0-gutter ">
+                    <div class="ot-portfolio-item ">
+                        <figure class="effect-bubba ">
+                            <img class="img-responsive " src="images/demo/portfolio-6.jpg" alt="img02" />
+                            <figcaption>
+                                <h2>宁夏回族自治区
+                                </h2>
+                                <p>大漠孤烟直·长河落日圆
+                                </p>
+                                <a id="idpWVdTd" href="#" data-toggle="modal" data-target="#Modal-6">View more
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
-            <div id="idLoCuIS" class="col-md-6 col-0-gutter ">
-                <div id="idvUm4CB" class="ot-portfolio-item ">
-                    <figure id="idfzGQWj" class="effect-bubba ">
-                        <img id="id8X2jvZ" class="img-responsive " src="images/demo/portfolio-5.jpg" alt="img02" />
-                        <figcaption id="idqMiVW6">
-                            <h2 id="idaUvKl4">天津市
-                            </h2>
-                            <p id="idW8pTal">辅弼公正随领袖，鞠躬尽瘁强中华
-                            </p>
-                            <a id="idcbIgjW" href="#" data-toggle="modal" data-target="#Modal-5">View more
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-        <div id="idM8rkrw" class="row row-0-gutter ">
-            <div id="idX9Fkmp" class="col-md-6 col-0-gutter ">
-                <div id="idXRgK5T" class="ot-portfolio-item ">
-                    <figure id="idEUesp4" class="effect-bubba ">
-                        <img id="idOcxTcH" class="img-responsive " src="images/demo/portfolio-4.jpg" alt="img02" />
-                        <figcaption id="idNP7f96">
-                            <h2 id="idoaATxd">湖南省长沙市
-                            </h2>
-                            <p id="idPPTIlb">红色潇湘铸忠魂
-                            </p>
-                            <a id="idNjzssx" href="#" data-toggle="modal" data-target="#Modal-4">View more
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-            <div class="col-md-6 col-0-gutter ">
-                <div class="ot-portfolio-item ">
-                    <figure class="effect-bubba ">
-                        <img class="img-responsive " src="images/demo/portfolio-6.jpg" alt="img02" />
-                        <figcaption>
-                            <h2>宁夏回族自治区
-                            </h2>
-                            <p>大漠孤烟直·长河落日圆
-                            </p>
-                            <a id="idpWVdTd" href="#" data-toggle="modal" data-target="#Modal-6">View more
-                            </a>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
     </div>
     </section>
     <section id="about" class="mz-module ">
@@ -837,7 +826,8 @@
 
         <footer id="idWGzEMq">
             <div id="idn4nS9l" class="container text-center " style="width: max-content; height: 0px;">
-                <a href="https://mp.weixin.qq.com/s?__biz=MzkwNjUyMzcyMg==&mid=2247484021&idx=1&sn=69dfb310ad795bb175522af76541a52c&chksm=c0e66750f791ee46d2a1020de829cd219f147ab0f20550257cacbaa273b5b7c04b18716999e7&mpshare=1&srcid=0722K54uqzXEPmGU8BG0Th2r&sharer_sharetime=1690020300789&sharer_shareid=b76eec5dfdf37f1b29684caaf9ec68a7&from=groupmessage&scene=1&subscene=10000&sessionid=1693908469&clicktime=1693910533&enterid=1693910533&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6843331-zh_CN-zip&fasttmpl_flag=0&realreporttime=1693910533181&devicetype=android-30&version=28002862&nettype=cmnet&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQjyZpg%2BojR67kq1waw41b3hLwAQIE97dBBAEAAAAAANJaIWv9bp4AAAAOpnltbLcz9gKNyK89dVj0xFPZHB%2FQHWZzmJtP3zfFNZyjCDydHRekDKFNinGMzbxXTpCi61x80QUpHK%2Fc%2FYzxeXkIM0ask1ADx6X4%2BqGcNDE8lKzJTZE7ae95hiGyLHqAuYgNjnKmlNd7Dz4fUiPgyrdkUnm0jVobeNdPhFYyUZHMVPM9EK9feDPvnokt0xrApgWrKM0YoguBd4SRuITTCSTdn7O7aD95%2FnRYavs0ehvrLR%2Fm%2BypfzlNJLIBE5L5eNkoy0Wvor%2BSOdgULGa3agQKfyzAMABGyZg%3D%3D&pass_ticket=NFz2JZVa6O12dcKHjKh0LwNICBVin86UCbU%2FgSgfwbFG5pwYPyHsILMbMP%2FUGTpP&wx_header=3">
+                <a
+                    href="https://mp.weixin.qq.com/s?__biz=MzkwNjUyMzcyMg==&mid=2247484021&idx=1&sn=69dfb310ad795bb175522af76541a52c&chksm=c0e66750f791ee46d2a1020de829cd219f147ab0f20550257cacbaa273b5b7c04b18716999e7&mpshare=1&srcid=0722K54uqzXEPmGU8BG0Th2r&sharer_sharetime=1690020300789&sharer_shareid=b76eec5dfdf37f1b29684caaf9ec68a7&from=groupmessage&scene=1&subscene=10000&sessionid=1693908469&clicktime=1693910533&enterid=1693910533&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6843331-zh_CN-zip&fasttmpl_flag=0&realreporttime=1693910533181&devicetype=android-30&version=28002862&nettype=cmnet&lang=zh_CN&countrycode=CN&exportkey=n_ChQIAhIQjyZpg%2BojR67kq1waw41b3hLwAQIE97dBBAEAAAAAANJaIWv9bp4AAAAOpnltbLcz9gKNyK89dVj0xFPZHB%2FQHWZzmJtP3zfFNZyjCDydHRekDKFNinGMzbxXTpCi61x80QUpHK%2Fc%2FYzxeXkIM0ask1ADx6X4%2BqGcNDE8lKzJTZE7ae95hiGyLHqAuYgNjnKmlNd7Dz4fUiPgyrdkUnm0jVobeNdPhFYyUZHMVPM9EK9feDPvnokt0xrApgWrKM0YoguBd4SRuITTCSTdn7O7aD95%2FnRYavs0ehvrLR%2Fm%2BypfzlNJLIBE5L5eNkoy0Wvor%2BSOdgULGa3agQKfyzAMABGyZg%3D%3D&pass_ticket=NFz2JZVa6O12dcKHjKh0LwNICBVin86UCbU%2FgSgfwbFG5pwYPyHsILMbMP%2FUGTpP&wx_header=3">
                     <p style="font-size: 16px; color: orangered;">
                         紫韵·星火 社会实践团
                     </p>
@@ -846,9 +836,9 @@
         </footer>
         <div id="Modal-1" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
             <div class="modal-dialog " role="document">
-                <div  class="modal-content ">
-                    <div  class="modal-header ">
-                        <button  class="close " type="button" data-dismiss="modal" aria-label="Close">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <button class="close " type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×
                             </span>
                         </button>
@@ -1330,7 +1320,7 @@
                             <span id="id6RF3uP" aria-hidden="true">×
                             </span>
                         </button>
-                        <h4 id="Vedio-label-3" class="modal-title ">标题
+                        <h4 id="Vedio-label-3" class="modal-title ">东北振兴
                         </h4>
                     </div>
                     <div class="modal-body ">
@@ -1363,7 +1353,7 @@
                             <span id="id6RF3uP" aria-hidden="true">×
                             </span>
                         </button>
-                        <h4 id="Vedio-label-4" class="modal-title ">红色宣讲
+                        <h4 id="Vedio-label-4" class="modal-title ">辽宁红色宣讲
                         </h4>
                     </div>
                     <div class="modal-body ">
